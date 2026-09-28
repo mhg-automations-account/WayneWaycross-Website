@@ -46,7 +46,7 @@ export default function Hero() {
         className="relative z-10 flex h-full flex-col items-center justify-end px-4 pb-[14vh] text-center will-change-transform"
       >
         <h1 className="display hero-in text-[clamp(3.2rem,9vw,6.5rem)] text-ink">
-          Come Home to Crestview
+          Family Homes of Crestview
         </h1>
         <p className="hero-in mt-4 max-w-md text-lg text-ink/85 [animation-delay:150ms]">
           Quality mobile homes, honest prices and a family that stands behind every sale.
