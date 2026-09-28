@@ -12,7 +12,7 @@ const links = [
 
 const ease = "duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]";
 
-/** Full-width bar over the hero that eases into a floating pill once the hero is scrolled past. */
+/** Wide floating bar over the hero that eases into a compact pill once the hero is scrolled past. */
 export default function Nav() {
   const [compact, setCompact] = useState(false);
 
@@ -33,13 +33,13 @@ export default function Nav() {
 
   return (
     <header
-      className={`fixed inset-x-0 z-50 transition-all ${ease} ${compact ? "top-3 px-4 sm:top-4" : "top-0 px-0"}`}
+      className={`fixed inset-x-0 z-50 transition-all ${ease} ${compact ? "top-3 px-4" : "top-3 px-4 sm:top-5 sm:px-8 lg:px-[4.5vw]"}`}
     >
       <nav
         className={`mx-auto flex items-center justify-between border transition-all ${ease} ${
           compact
-            ? "max-w-[760px] rounded-2xl border-white/60 bg-[#faf6f2]/80 py-2 pr-2 pl-3 shadow-[0_6px_30px_-12px_rgba(90,50,30,0.25)] backdrop-blur-xl"
-            : "max-w-[100vw] rounded-none border-transparent border-b-white/30 bg-[#faf6f2]/15 py-4 pr-4 pl-5 shadow-none backdrop-blur-sm sm:pr-8 sm:pl-10"
+            ? "max-w-[820px] rounded-2xl border-[#ece4dc] bg-[#faf7f4]/90 py-2 pr-2 pl-3 shadow-[0_6px_30px_-12px_rgba(90,50,30,0.25)] backdrop-blur-xl"
+            : "max-w-[1500px] rounded-2xl border-white/70 bg-[#faf6f2]/75 py-2.5 pr-2.5 pl-4 shadow-[0_8px_30px_-16px_rgba(90,50,30,0.3)] backdrop-blur-md sm:py-3.5 sm:pr-4 sm:pl-7"
         }`}
       >
         <a href="#top" aria-label={`${site.fullName} home`}>
