@@ -1,12 +1,12 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { site } from "../lib/site";
 import { ArrowRight } from "./Icons";
-import Scene from "./Scene";
 
-/** Full-bleed hero with a slow parallax background and lagging headline. */
+/** Full-bleed hero with a slow parallax photo and lagging headline. */
 export default function Hero() {
   const bg = useRef<HTMLDivElement>(null);
   const content = useRef<HTMLDivElement>(null);
@@ -36,10 +36,17 @@ export default function Hero() {
   return (
     <section id="top" className="relative h-[100svh] min-h-[640px] overflow-hidden">
       <div ref={bg} className="absolute inset-0 origin-top will-change-transform">
-        <Scene className="h-full w-full" />
+        <Image
+          src="https://familyhomecentercrestview.com/wp-content/uploads/2020/07/JWL_4429_13.jpg"
+          alt="Living room of a Family Home Center model home"
+          fill
+          preload
+          sizes="100vw"
+          className="object-cover"
+        />
       </div>
-      {/* Wash into the page colour */}
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[26%] bg-gradient-to-b from-transparent via-cream/60 to-cream" />
+      {/* Wash into the page colour, keeping the headline legible over the photo */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[70%] bg-gradient-to-b from-transparent via-cream/75 to-cream" />
 
       <div
         ref={content}
