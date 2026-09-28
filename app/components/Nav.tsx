@@ -1,13 +1,14 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useState } from "react";
 import { site } from "../lib/site";
 import { Logo } from "./Icons";
 
 const links = [
-  { href: "#homes", label: "Homes" },
-  { href: "#showcase", label: "Showcase" },
-  { href: "#financing", label: "Financing" },
+  { href: "/homes", label: "Homes" },
+  { href: "/#showcase", label: "Showcase" },
+  { href: "/#financing", label: "Financing" },
 ];
 
 const ease = "duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]";
@@ -38,13 +39,13 @@ export default function Nav() {
       <nav
         className={`mx-auto flex items-center justify-between border transition-all ${ease} ${
           compact
-            ? "max-w-[820px] rounded-2xl border-[#ece4dc] bg-[#faf7f4]/90 py-2 pr-2 pl-3 shadow-[0_6px_30px_-12px_rgba(90,50,30,0.25)] backdrop-blur-xl"
-            : "max-w-[1500px] rounded-2xl border-white/70 bg-[#faf6f2]/75 py-2.5 pr-2.5 pl-4 shadow-[0_8px_30px_-16px_rgba(90,50,30,0.3)] backdrop-blur-md sm:py-3.5 sm:pr-4 sm:pl-7"
+            ? "max-w-[820px] rounded-2xl border-line bg-cream/90 py-2 pr-2 pl-3 shadow-[0_6px_30px_-12px_rgba(40,70,30,0.25)] backdrop-blur-xl"
+            : "max-w-[1500px] rounded-2xl border-white/70 bg-cream/75 py-2.5 pr-2.5 pl-4 shadow-[0_8px_30px_-16px_rgba(40,70,30,0.3)] backdrop-blur-md sm:py-3 sm:pr-4 sm:pl-5"
         }`}
       >
-        <a href="#top" aria-label={`${site.fullName} home`}>
-          <Logo />
-        </a>
+        <Link href="/" aria-label={`${site.fullName} home`}>
+          <Logo className={`transition-all ${ease} ${compact ? "h-9" : "h-9 sm:h-11"}`} />
+        </Link>
         <ul
           className={`hidden items-center text-[15px] font-medium text-ink/85 transition-all md:flex ${ease} ${
             compact ? "gap-8" : "gap-12"
@@ -52,9 +53,9 @@ export default function Nav() {
         >
           {links.map((l) => (
             <li key={l.href}>
-              <a href={l.href} className="transition-colors hover:text-clay">
+              <Link href={l.href} className="transition-colors hover:text-clay">
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

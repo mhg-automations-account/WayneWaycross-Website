@@ -1,16 +1,18 @@
 @import "tailwindcss";
 
+/* Leaf-green palette pulled from the Family Home Center logo.
+   `clay` is the primary brand accent, `blush` its light tint. */
 @theme {
-  --color-cream: #faf8f5;
-  --color-band: #f3efea;
-  --color-card: #f4efea;
-  --color-line: #e9e1d9;
-  --color-ink: #2b2521;
-  --color-muted: #625853;
-  --color-clay: #b9604a;
-  --color-clay-dark: #a24f3b;
-  --color-blush: #f1ddd5;
-  --color-sage: #6f9e7b;
+  --color-cream: #f8faf4;
+  --color-band: #eef4e6;
+  --color-card: #f1f6ea;
+  --color-line: #dde8d1;
+  --color-ink: #1f271c;
+  --color-muted: #56614f;
+  --color-clay: #4c8a2b;
+  --color-clay-dark: #3d7322;
+  --color-blush: #e0f0d0;
+  --color-sage: #5f9a4a;
   --color-gold: #d4a94a;
   --font-serif: var(--font-instrument-serif);
   --font-sans: var(--font-inter);
@@ -145,7 +147,7 @@ body {
   border-radius: 999px;
   background: #fff;
   border: 2px solid var(--color-clay);
-  box-shadow: 0 2px 8px rgb(80 40 30 / 0.2);
+  box-shadow: 0 2px 8px rgb(40 70 30 / 0.2);
   transition: transform 0.2s ease;
 }
 .range::-webkit-slider-thumb:hover {
@@ -157,7 +159,7 @@ body {
   border-radius: 999px;
   background: #fff;
   border: 2px solid var(--color-clay);
-  box-shadow: 0 2px 8px rgb(80 40 30 / 0.2);
+  box-shadow: 0 2px 8px rgb(40 70 30 / 0.2);
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -50,7 +50,7 @@ export default function Features() {
         <div className="mx-auto mt-16 grid max-w-[1200px] gap-8 md:grid-cols-3">
           {features.map((f, i) => (
             <Reveal key={f.title} delay={200 + i * 140}>
-              <article className="h-full rounded-[28px] border border-line bg-card p-8 text-left transition-all duration-500 ease-out hover:-translate-y-1.5 hover:bg-[#f7f2ee] hover:shadow-[0_24px_50px_-24px_rgba(90,50,30,0.35)]">
+              <article className="h-full rounded-[28px] border border-line bg-card p-8 text-left transition-all duration-500 ease-out hover:-translate-y-1.5 hover:bg-[#f5f9ef] hover:shadow-[0_24px_50px_-24px_rgba(40,70,30,0.35)]">
                 <span className="grid h-12 w-12 place-items-center rounded-2xl bg-blush text-clay">
                   <f.icon className="h-6 w-6" />
                 </span>

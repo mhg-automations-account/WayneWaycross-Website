@@ -102,14 +102,14 @@ export default function Financing() {
               onChange={(e) => setPrice(Number(e.target.value))}
               aria-label="Home price"
               className="range w-full"
-              style={{ background: `linear-gradient(to right, var(--color-clay) ${pct}%, #e6ddd5 ${pct}%)` }}
+              style={{ background: `linear-gradient(to right, var(--color-clay) ${pct}%, #dbe5d0 ${pct}%)` }}
             />
           </div>
           <div className="relative self-center sm:self-auto">
             <span className="absolute -top-6 right-0 rotate-[-6deg] font-serif text-sm text-clay italic">
               lowest payment
             </span>
-            <div className="flex rounded-xl border border-line bg-[#ece6e0] p-1 text-sm">
+            <div className="flex rounded-xl border border-line bg-[#e4ecdb] p-1 text-sm">
               {([20, 30] as const).map((y) => (
                 <button
                   key={y}
@@ -133,8 +133,8 @@ export default function Financing() {
                 <article
                   className={`h-full rounded-[28px] border border-line p-8 transition-all duration-500 ${
                     p.featured
-                      ? "bg-[#f7f3ef] shadow-[0_30px_60px_-30px_rgba(90,50,30,0.35)] md:-translate-y-1"
-                      : "bg-card hover:shadow-[0_24px_50px_-28px_rgba(90,50,30,0.3)]"
+                      ? "bg-[#f7faf2] shadow-[0_30px_60px_-30px_rgba(40,70,30,0.35)] md:-translate-y-1"
+                      : "bg-card hover:shadow-[0_24px_50px_-28px_rgba(40,70,30,0.3)]"
                   }`}
                 >
                   <p className="font-serif text-sm tracking-wide text-muted uppercase">{p.name}</p>

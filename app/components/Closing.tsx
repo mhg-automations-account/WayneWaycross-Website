@@ -29,15 +29,15 @@ export function CallToAction() {
 
 export function Footer() {
   const links = [
-    { href: "#homes", label: "Homes" },
-    { href: "#financing", label: "Financing" },
+    { href: "/homes", label: "Homes" },
+    { href: "/#financing", label: "Financing" },
     { href: site.phoneHref, label: "Contact" },
     { href: site.facebook, label: "Facebook" },
   ];
   return (
     <footer className="border-t border-line bg-band px-6 py-8">
       <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-5 md:flex-row">
-        <Logo />
+        <Logo className="h-12" />
         <ul className="flex flex-wrap justify-center gap-7 text-sm text-muted">
           {links.map((l) => (
             <li key={l.label}>

@@ -61,13 +61,13 @@ function LineChart({ visible }: { visible: boolean }) {
   const path = (k: "balance" | "equity" | "interest") =>
     rows.map((r, i) => `${i ? "L" : "M"}${x(i).toFixed(1)} ${y(r[k]).toFixed(1)}`).join(" ");
   const series = [
-    { k: "balance" as const, c: "#c0604a", name: "Loan balance" },
-    { k: "equity" as const, c: "#6f9e7b", name: "Equity" },
+    { k: "balance" as const, c: "#3d7322", name: "Loan balance" },
+    { k: "equity" as const, c: "#8cc152", name: "Equity" },
     { k: "interest" as const, c: "#d4a94a", name: "Interest paid" },
   ];
 
   return (
-    <div className="rounded-2xl border border-line bg-[#f6f2ee] p-4">
+    <div className="rounded-2xl border border-line bg-[#f5f9ef] p-4">
       <p className="text-sm font-medium text-ink">Your loan over time · {usd(PRICE)} home</p>
       <div className="relative">
         <svg
@@ -83,15 +83,15 @@ function LineChart({ visible }: { visible: boolean }) {
         >
           {[0, 0.25, 0.5, 0.75, 1].map((t) => (
             <g key={t} className="chart-fade">
-              <line x1={PAD.l} x2={W - PAD.r} y1={y(max * t)} y2={y(max * t)} stroke="#e7dfd7" strokeDasharray="3 4" />
-              <text x={PAD.l - 8} y={y(max * t) + 4} textAnchor="end" fontSize="11" fill="#8b807a">
+              <line x1={PAD.l} x2={W - PAD.r} y1={y(max * t)} y2={y(max * t)} stroke="#dbe5d0" strokeDasharray="3 4" />
+              <text x={PAD.l - 8} y={y(max * t) + 4} textAnchor="end" fontSize="11" fill="#7d8a74">
                 ${Math.round((max * t) / 1000)}k
               </text>
             </g>
           ))}
           {rows.map((r, i) =>
             i % 5 === 0 ? (
-              <text key={i} x={x(i)} y={H - 8} textAnchor="middle" fontSize="11" fill="#8b807a" className="chart-fade">
+              <text key={i} x={x(i)} y={H - 8} textAnchor="middle" fontSize="11" fill="#7d8a74" className="chart-fade">
                 Yr {r.year}
               </text>
             ) : null,
@@ -111,7 +111,7 @@ function LineChart({ visible }: { visible: boolean }) {
           ))}
           {hover !== null && visible && (
             <g>
-              <line x1={x(hover)} x2={x(hover)} y1={PAD.t} y2={H - PAD.b} stroke="#cbbfb5" />
+              <line x1={x(hover)} x2={x(hover)} y1={PAD.t} y2={H - PAD.b} stroke="#bccbb0" />
               {series.map((s) => (
                 <circle key={s.k} cx={x(hover)} cy={y(rows[hover][s.k])} r="4" fill="#fff" stroke={s.c} strokeWidth="2" />
               ))}
@@ -159,7 +159,7 @@ function BarChart({
 }) {
   const max = Math.max(...data.map((d) => d.v)) * 1.1;
   return (
-    <div className="rounded-2xl border border-line bg-[#f6f2ee] p-4">
+    <div className="rounded-2xl border border-line bg-[#f5f9ef] p-4">
       <p className="text-sm font-medium text-ink">{title}</p>
       <div className="mt-4 space-y-2.5">
         {data.map((d, i) => (
@@ -205,18 +205,18 @@ export default function Showcase() {
       </div>
 
       <div ref={ref} className={`reveal-window ${visible ? "is-visible" : ""} relative mx-auto mt-16 max-w-[1000px] px-4`}>
-        <div className="rounded-[28px] border border-white/70 bg-[#efe9e3]/90 p-3 shadow-[0_40px_80px_-30px_rgba(90,50,30,0.35)] backdrop-blur-md">
+        <div className="rounded-[28px] border border-white/70 bg-[#e9f0e0]/90 p-3 shadow-[0_40px_80px_-30px_rgba(40,70,30,0.35)] backdrop-blur-md">
           <div className="flex gap-1.5 px-2 pt-1 pb-3">
             <span className="h-3 w-3 rounded-full bg-[#e0907c]" />
             <span className="h-3 w-3 rounded-full bg-[#e3be73]" />
             <span className="h-3 w-3 rounded-full bg-[#9dbb8f]" />
           </div>
-          <div className="space-y-3 rounded-[20px] bg-[#ebe4dd] p-3 sm:p-4">
+          <div className="space-y-3 rounded-[20px] bg-[#e3ebd9] p-3 sm:p-4">
             <div className="grid grid-cols-2 gap-3 lg:grid-cols-4">
               {tiles.map((t, i) => (
                 <div
                   key={t.label}
-                  className="chart-fade rounded-2xl border border-line bg-[#f6f2ee] p-4 text-left"
+                  className="chart-fade rounded-2xl border border-line bg-[#f5f9ef] p-4 text-left"
                   style={{ transitionDelay: `${250 + i * 90}ms` }}
                 >
                   <p className="text-xs text-muted">{t.label}</p>
@@ -233,7 +233,7 @@ export default function Showcase() {
                 <BarChart
                   title="Typical floor plans (sq ft)"
                   data={sizes}
-                  color="#6f9e7b"
+                  color="#7cb342"
                   format={(n) => `${n.toLocaleString()} sq ft`}
                   delay={900}
                 />
