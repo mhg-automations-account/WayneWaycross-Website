@@ -1,4 +1,5 @@
 import { CallToAction, Footer } from "./components/Closing";
+import FeaturedHomes from "./components/FeaturedHomes";
 import Features from "./components/Features";
 import Financing from "./components/Financing";
 import Hero from "./components/Hero";
@@ -13,6 +14,7 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
+        <FeaturedHomes />
         <Showcase />
         <OurPromise />
         <Financing />

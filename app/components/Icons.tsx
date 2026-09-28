@@ -1,3 +1,6 @@
+import Image from "next/image";
+import logo from "../../public/FHC-CRESTVIEW-logo10_alt-325-rev2-copy.png";
+
 type P = { className?: string };
 
 const base = {
@@ -62,13 +65,20 @@ export const PhoneIcon = ({ className }: P) => (
   </svg>
 );
 
-export function Logo({ className = "" }: P) {
+/**
+ * Brand logo; size it with a height class, width follows the artwork.
+ * The source PNG is 1280×720 with the badge at roughly (177, 174) → (1077, 429),
+ * so we frame just that region instead of showing the white canvas around it.
+ */
+export function Logo({ className = "h-10" }: P) {
   return (
-    <span className={`inline-flex items-center gap-2 ${className}`}>
-      <span className="grid h-8 w-8 place-items-center rounded-full bg-clay text-white">
-        <HouseIcon className="h-[18px] w-[18px]" />
-      </span>
-      <span className="display text-[22px] leading-none text-ink">Family Homes</span>
+    <span className={`relative inline-block aspect-[900/255] shrink-0 overflow-hidden align-middle ${className}`}>
+      <Image
+        src={logo}
+        alt="Family Home Center Crestview"
+        sizes="320px"
+        className="absolute top-[-68.24%] left-[-19.67%] h-auto w-[142.22%] max-w-none"
+      />
     </span>
   );
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useEffect, useRef } from "react";
 import { site } from "../lib/site";
 import { ArrowRight } from "./Icons";
@@ -51,16 +52,16 @@ export default function Hero() {
           Quality mobile homes, honest prices and a family that stands behind every sale.
         </p>
         <div className="hero-in mt-7 flex flex-col gap-3 [animation-delay:300ms] sm:flex-row">
-          <a
-            href="#homes"
-            className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-clay px-9 py-4 text-[17px] font-medium text-white shadow-[0_10px_30px_-10px_rgba(162,79,59,0.6)] transition-colors hover:bg-clay-dark"
+          <Link
+            href="/homes"
+            className="group inline-flex items-center justify-center gap-2.5 rounded-full bg-clay px-9 py-4 text-[17px] font-medium text-white shadow-[0_10px_30px_-10px_rgba(61,115,34,0.6)] transition-colors hover:bg-clay-dark"
           >
             Browse our homes
             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
-          </a>
+          </Link>
           <a
             href={site.phoneHref}
-            className="inline-flex items-center justify-center rounded-full bg-[#fbf7f3]/90 px-12 py-4 text-[17px] font-medium text-ink backdrop-blur transition-colors hover:bg-white"
+            className="inline-flex items-center justify-center rounded-full bg-cream/90 px-12 py-4 text-[17px] font-medium text-ink backdrop-blur transition-colors hover:bg-white"
           >
             Call {site.phone}
           </a>
