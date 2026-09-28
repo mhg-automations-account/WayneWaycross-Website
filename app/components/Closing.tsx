@@ -73,6 +73,7 @@ export function Footer() {
   const links = [
     { href: "/homes", label: "Homes" },
     { href: "/#financing", label: "Financing" },
+    { href: "/about", label: "About Us" },
     { href: site.phoneHref, label: "Contact" },
     { href: site.facebook, label: "Facebook" },
   ];

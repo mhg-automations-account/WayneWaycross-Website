@@ -8,6 +8,8 @@ import { Logo } from "./Icons";
 const links = [
   { href: "/homes", label: "Homes" },
   { href: "/#financing", label: "Financing" },
+  { href: "/#reviews", label: "Reviews" },
+  { href: "/about", label: "About" },
 ];
 
 const ease = "duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]";
