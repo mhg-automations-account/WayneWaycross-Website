@@ -145,3 +145,35 @@ body {
     animation: none;
   }
 }
+
+/* ---------- Review ticker ---------- */
+@keyframes ticker {
+  to {
+    transform: translateX(-100%);
+  }
+}
+.ticker-track {
+  animation: ticker linear infinite;
+}
+.ticker-reverse {
+  animation-direction: reverse;
+}
+.ticker:hover .ticker-track,
+.ticker:focus-within .ticker-track {
+  animation-play-state: paused;
+}
+.ticker-mask {
+  mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .ticker {
+    overflow-x: auto;
+  }
+  .ticker-track {
+    animation: none;
+  }
+  .ticker-track[aria-hidden] {
+    display: none;
+  }
+}

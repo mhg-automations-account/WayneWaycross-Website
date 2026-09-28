@@ -4,7 +4,7 @@ import Features from "./components/Features";
 import Financing from "./components/Financing";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
-import OurPromise from "./components/OurPromise";
+import Reviews from "./components/Reviews";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         <Hero />
         <Features />
         <FeaturedHomes />
-        <OurPromise />
+        <Reviews />
         <Financing />
         <CallToAction />
       </main>
