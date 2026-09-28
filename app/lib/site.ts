@@ -17,12 +17,3 @@ export function monthlyPayment(principal: number, aprPercent: number, years: num
 
 export const usd = (n: number) =>
   n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
-
-/** Small deterministic PRNG so server and client render identical artwork. */
-export function seeded(seed: number) {
-  let s = seed;
-  return () => {
-    s = (s * 16807) % 2147483647;
-    return (s - 1) / 2147483646;
-  };
-}

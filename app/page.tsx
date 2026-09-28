@@ -5,7 +5,6 @@ import Financing from "./components/Financing";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import OurPromise from "./components/OurPromise";
-import Showcase from "./components/Showcase";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
         <Hero />
         <Features />
         <FeaturedHomes />
-        <Showcase />
         <OurPromise />
         <Financing />
         <CallToAction />
