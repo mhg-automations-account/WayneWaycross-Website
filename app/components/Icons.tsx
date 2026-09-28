@@ -65,6 +65,25 @@ export const PhoneIcon = ({ className }: P) => (
   </svg>
 );
 
+export const PinIcon = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z" />
+    <circle cx="12" cy="10" r="2.3" />
+  </svg>
+);
+
+export const SendIcon = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <path d="M21 3 10 14M21 3l-7 18-4-7-7-4z" />
+  </svg>
+);
+
+export const ChevronDown = ({ className }: P) => (
+  <svg {...base} strokeWidth={2} className={className} aria-hidden="true">
+    <path d="m6 9 6 6 6-6" />
+  </svg>
+);
+
 /**
  * Brand logo; size it with a height class, width follows the artwork.
  * The source PNG is 1280×720 with the badge at roughly (177, 174) → (1077, 429),

@@ -69,39 +69,6 @@ body {
   transform: none;
 }
 
-/* Line chart draws itself in */
-.chart-line {
-  stroke-dasharray: 1;
-  stroke-dashoffset: 1;
-}
-.is-visible .chart-line {
-  animation: draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
-}
-@keyframes draw {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
-
-/* Bars grow from the axis */
-.chart-bar {
-  transform: scaleX(0);
-  transform-origin: left center;
-  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
-}
-.is-visible .chart-bar {
-  transform: scaleX(1);
-}
-
-/* Fade for chart internals, sequenced after the window lands */
-.chart-fade {
-  opacity: 0;
-  transition: opacity 0.8s ease;
-}
-.is-visible .chart-fade {
-  opacity: 1;
-}
-
 /* Hero content fades in on load */
 @keyframes hero-in {
   from {
@@ -167,18 +134,12 @@ body {
     scroll-behavior: auto;
   }
   .reveal,
-  .reveal-window,
-  .chart-fade,
-  .chart-bar {
+  .reveal-window {
     opacity: 1;
     transform: none;
     filter: none;
     transition: none;
   }
-  .chart-line {
-    stroke-dashoffset: 0;
-  }
-  .is-visible .chart-line,
   .hero-in,
   .drift {
     animation: none;
