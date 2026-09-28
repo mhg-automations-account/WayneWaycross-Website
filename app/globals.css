@@ -1,26 +1,184 @@
 @import "tailwindcss";
 
+@theme {
+  --color-cream: #faf8f5;
+  --color-band: #f3efea;
+  --color-card: #f4efea;
+  --color-line: #e9e1d9;
+  --color-ink: #2b2521;
+  --color-muted: #625853;
+  --color-clay: #b9604a;
+  --color-clay-dark: #a24f3b;
+  --color-blush: #f1ddd5;
+  --color-sage: #6f9e7b;
+  --color-gold: #d4a94a;
+  --font-serif: var(--font-instrument-serif);
+  --font-sans: var(--font-inter);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  color-scheme: light;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Serif display headings, tightly tracked like the reference */
+.display {
+  font-family: var(--font-instrument-serif), Georgia, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(18px);
+  filter: blur(6px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.9s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+  will-change: opacity, transform, filter;
+}
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+  filter: none;
+}
+
+/* Window mockup rises in a little further and settles */
+.reveal-window {
+  opacity: 0;
+  transform: translateY(70px) scale(0.97);
+  transition:
+    opacity 1.1s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-window.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Line chart draws itself in */
+.chart-line {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+}
+.is-visible .chart-line {
+  animation: draw 1.8s cubic-bezier(0.65, 0, 0.35, 1) forwards;
+}
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Bars grow from the axis */
+.chart-bar {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 1s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.is-visible .chart-bar {
+  transform: scaleX(1);
+}
+
+/* Fade for chart internals, sequenced after the window lands */
+.chart-fade {
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+.is-visible .chart-fade {
+  opacity: 1;
+}
+
+/* Hero content fades in on load */
+@keyframes hero-in {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+    filter: blur(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+    filter: none;
+  }
+}
+.hero-in {
+  animation: hero-in 1.2s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes drift {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(40px);
+  }
+}
+.drift {
+  animation: drift 14s ease-in-out infinite alternate;
+}
+
+/* Custom range slider */
+.range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 8px;
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+}
+.range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 22px;
+  height: 22px;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid var(--color-clay);
+  box-shadow: 0 2px 8px rgb(80 40 30 / 0.2);
+  transition: transform 0.2s ease;
+}
+.range::-webkit-slider-thumb:hover {
+  transform: scale(1.12);
+}
+.range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 999px;
+  background: #fff;
+  border: 2px solid var(--color-clay);
+  box-shadow: 0 2px 8px rgb(80 40 30 / 0.2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .reveal,
+  .reveal-window,
+  .chart-fade,
+  .chart-bar {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    transition: none;
+  }
+  .chart-line {
+    stroke-dashoffset: 0;
+  }
+  .is-visible .chart-line,
+  .hero-in,
+  .drift {
+    animation: none;
+  }
 }
