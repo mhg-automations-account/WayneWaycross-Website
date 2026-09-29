@@ -69,7 +69,7 @@ export default function HomesBrowser() {
 
       <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {list.map((h) => (
-          <HomeCard key={h.slug} home={h} sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" />
+          <HomeCard key={h.slug} home={h} heading="h2" sizes="(min-width: 1024px) 380px, (min-width: 640px) 50vw, 100vw" />
         ))}
       </div>
     </>

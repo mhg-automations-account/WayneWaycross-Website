@@ -74,9 +74,8 @@ export function Footer() {
     { href: "/homes", label: "Homes" },
     { href: "/#financing", label: "Financing" },
     { href: "/about", label: "About Us" },
-    { href: site.phoneHref, label: "Contact" },
-    { href: site.facebook, label: "Facebook" },
   ];
+  const { street, city, region, postalCode } = site.address;
   return (
     <footer className="border-t border-line bg-band px-6 py-8">
       <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-5 md:flex-row">
@@ -84,16 +83,35 @@ export function Footer() {
         <ul className="flex flex-wrap justify-center gap-7 text-sm text-muted">
           {links.map((l) => (
             <li key={l.label}>
-              <a href={l.href} className="transition-colors hover:text-ink">
+              <Link href={l.href} className="transition-colors hover:text-ink">
                 {l.label}
-              </a>
+              </Link>
             </li>
           ))}
+          <li>
+            <a href={site.phoneHref} className="transition-colors hover:text-ink">
+              Contact
+            </a>
+          </li>
+          <li>
+            <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-ink">
+              Facebook
+            </a>
+          </li>
         </ul>
         <p className="text-sm text-muted">
           © {new Date().getFullYear()} {site.fullName}
         </p>
       </div>
+      <address className="mx-auto mt-6 flex max-w-[1200px] flex-col items-center gap-1 border-t border-line pt-6 text-center text-sm text-muted not-italic md:flex-row md:justify-center md:gap-6">
+        <a href={site.mapUrl} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-ink">
+          {street}, {city}, {region} {postalCode}
+        </a>
+        <a href={site.phoneHref} className="transition-colors hover:text-ink">
+          {site.phone}
+        </a>
+        <span>Mon–Fri 9am–5:30pm · Sat 9am–4:30pm</span>
+      </address>
     </footer>
   );
 }
