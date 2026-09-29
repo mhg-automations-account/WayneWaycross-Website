@@ -3,10 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CallToAction, Footer } from "../../components/Closing";
+import JsonLd, { breadcrumbSchema } from "../../components/JsonLd";
 import HomeCard from "../../components/HomeCard";
 import { ArrowRight } from "../../components/Icons";
 import Nav from "../../components/Nav";
-import { getHome, homes, specs } from "../../lib/homes";
+import { getHome, homes, homeAlt } from "../../lib/homes";
+import { pageMetadata } from "../../lib/seo";
 import { site } from "../../lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -18,10 +20,12 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const home = getHome((await params).slug);
   if (!home) return {};
-  return {
-    title: `The ${home.name} | ${site.fullName}`,
-    description: `The ${home.name}: ${specs(home)}. On our lot in ${site.city}.`,
-  };
+  return pageMetadata({
+    title: `The ${home.name}: ${home.beds} Bed, ${home.baths} Bath Mobile Home | ${site.fullName}`,
+    description: `See the ${home.name}, a ${home.beds}-bedroom, ${home.baths}-bath, ${home.sqft.toLocaleString("en-US")} sq ft manufactured home on our lot in ${site.city}. Call ${site.phone} for pricing, financing and delivery.`,
+    path: `/homes/${home.slug}`,
+    image: { url: home.photo, alt: homeAlt(home) },
+  });
 }
 
 export default async function HomePage({ params }: Props) {
@@ -41,6 +45,12 @@ export default async function HomePage({ params }: Props) {
 
   return (
     <>
+      <JsonLd
+        data={breadcrumbSchema([
+          { name: "Homes", path: "/homes" },
+          { name: `The ${home.name}`, path: `/homes/${home.slug}` },
+        ])}
+      />
       <Nav />
       <main>
         <section id="top" className="px-4 pt-32 pb-20 sm:px-6">
@@ -52,9 +62,9 @@ export default async function HomePage({ params }: Props) {
               <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] border border-line bg-band">
                 <Image
                   src={home.photo}
-                  alt={`The ${home.name} home`}
+                  alt={homeAlt(home)}
                   fill
-                  loading="eager"
+                  preload
                   sizes="(min-width: 1024px) 720px, 100vw"
                   className="object-cover"
                 />

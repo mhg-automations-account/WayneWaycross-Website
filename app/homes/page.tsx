@@ -1,18 +1,21 @@
-import type { Metadata } from "next";
 import { CallToAction, Footer } from "../components/Closing";
+import JsonLd, { breadcrumbSchema } from "../components/JsonLd";
 import HomesBrowser from "../components/HomesBrowser";
 import Nav from "../components/Nav";
 import { homes } from "../lib/homes";
+import { pageMetadata } from "../lib/seo";
 import { site } from "../lib/site";
 
-export const metadata: Metadata = {
-  title: `Our Homes | ${site.fullName}`,
-  description: `Browse ${homes.length} single and multi-section mobile home models on our lot in Crestview, Florida.`,
-};
+export const metadata = pageMetadata({
+  title: `Mobile Home Floor Plans for Sale | ${site.fullName}`,
+  description: `Browse ${homes.length} single and multi-section mobile home floor plans, from 1 to 5 bedrooms, on our lot in Crestview, FL. Financing, delivery and setup available.`,
+  path: "/homes",
+});
 
 export default function HomesPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([{ name: "Homes", path: "/homes" }])} />
       <Nav />
       <main>
         <section id="top" className="bg-band px-4 pt-40 pb-16 text-center sm:px-6">

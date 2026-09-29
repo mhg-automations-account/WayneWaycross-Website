@@ -1,18 +1,20 @@
-import type { Metadata } from "next";
 import Image from "next/image";
+import JsonLd, { breadcrumbSchema } from "../components/JsonLd";
 import { CallToAction, Footer } from "../components/Closing";
 import { Check, HouseIcon, KeyIcon, ShieldIcon, TreeIcon } from "../components/Icons";
 import Nav from "../components/Nav";
 import OurPromise from "../components/OurPromise";
 import Reveal from "../components/Reveal";
 import Reviews from "../components/Reviews";
+import { pageMetadata } from "../lib/seo";
 import { site } from "../lib/site";
 
-export const metadata: Metadata = {
-  title: `About Us | ${site.fullName}`,
+export const metadata = pageMetadata({
+  title: `About ${site.fullName}: Mobile Home Dealer Since 1998`,
   description:
     "Serving the Florida Panhandle and South Alabama since 1998, Family Home Center of Crestview is the largest Live Oak Homes factory dealer in the area.",
-};
+  path: "/about",
+});
 
 const stats = [
   { value: "1998", label: "Serving Crestview since" },
@@ -53,6 +55,7 @@ const covered = [
 export default function AboutPage() {
   return (
     <>
+      <JsonLd data={breadcrumbSchema([{ name: "About Us", path: "/about" }])} />
       <Nav />
       <main>
         <section id="top" className="bg-band px-4 pt-40 pb-16 text-center sm:px-6">

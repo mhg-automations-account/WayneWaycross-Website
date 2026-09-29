@@ -17,6 +17,7 @@ const ease = "duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]";
 /** Wide floating bar over the hero that eases into a compact pill once the hero is scrolled past. */
 export default function Nav() {
   const [compact, setCompact] = useState(false);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -60,14 +61,43 @@ export default function Nav() {
             </li>
           ))}
         </ul>
-        <a
-          href={site.phoneHref}
-          className="rounded-full bg-clay px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-clay-dark"
-        >
-          <span className="sm:hidden">Call us</span>
-          <span className="hidden sm:inline">Call {site.phone}</span>
-        </a>
+        <div className="flex items-center gap-2">
+          <a
+            href={site.phoneHref}
+            className="rounded-full bg-clay px-4 py-2.5 text-sm font-medium text-white transition-colors hover:bg-clay-dark"
+          >
+            <span className="sm:hidden">Call us</span>
+            <span className="hidden sm:inline">Call {site.phone}</span>
+          </a>
+          <button
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
+            aria-label={open ? "Close menu" : "Open menu"}
+            className="grid h-10 w-10 place-items-center rounded-full border border-line bg-cream text-ink md:hidden"
+          >
+            <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" aria-hidden="true">
+              {open ? <path d="M6 6l12 12M18 6 6 18" /> : <path d="M4 7h16M4 12h16M4 17h16" />}
+            </svg>
+          </button>
+        </div>
       </nav>
+      {/* Links hidden in the bar below md; always in the DOM so crawlers see them */}
+      <ul
+        id="mobile-menu"
+        className={`mx-auto mt-2 max-w-[820px] flex-col rounded-2xl border border-line bg-cream/95 p-2 text-[15px] font-medium text-ink shadow-[0_6px_30px_-12px_rgba(40,70,30,0.25)] backdrop-blur-xl md:hidden ${
+          open ? "flex" : "hidden"
+        }`}
+      >
+        {links.map((l) => (
+          <li key={l.href}>
+            <Link href={l.href} onClick={() => setOpen(false)} className="block rounded-xl px-4 py-3 hover:bg-band">
+              {l.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </header>
   );
 }

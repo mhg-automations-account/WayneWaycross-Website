@@ -118,3 +118,7 @@ export const featured = ["arlington", "lone-star", "horizon", "georgia-giant", "
 export const getHome = (slug: string) => homes.find((h) => h.slug === slug);
 
 export const specs = (h: Home) => `${h.beds} bed · ${h.baths} bath · ${h.sqft.toLocaleString("en-US")} sq ft`;
+
+/** Descriptive alt text for a home's listing photo. */
+export const homeAlt = (h: Home) =>
+  `The ${h.name}, a ${h.beds}-bedroom, ${h.baths}-bath, ${h.sqft.toLocaleString("en-US")} sq ft manufactured home`;

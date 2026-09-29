@@ -1,10 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
-import { specs, type Home } from "../lib/homes";
+import { homeAlt, specs, type Home } from "../lib/homes";
 import { ArrowRight } from "./Icons";
 
-/** Photo card for a single home model; `large` fills a taller grid slot. */
-export default function HomeCard({ home, large = false, sizes }: { home: Home; large?: boolean; sizes: string }) {
+/**
+ * Photo card for a single home model; `large` fills a taller grid slot.
+ * `heading` keeps the outline valid: h3 under a section's h2, h2 when the grid sits straight under the page's h1.
+ */
+export default function HomeCard({
+  home,
+  large = false,
+  sizes,
+  heading: Heading = "h3",
+}: {
+  home: Home;
+  large?: boolean;
+  sizes: string;
+  heading?: "h2" | "h3";
+}) {
   return (
     <Link
       href={`/homes/${home.slug}`}
@@ -13,7 +26,7 @@ export default function HomeCard({ home, large = false, sizes }: { home: Home; l
       <div className={`relative overflow-hidden bg-band aspect-[4/3] ${large ? "lg:aspect-auto lg:flex-1" : ""}`}>
         <Image
           src={home.photo}
-          alt={`The ${home.name} home`}
+          alt={homeAlt(home)}
           fill
           sizes={sizes}
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
@@ -21,7 +34,7 @@ export default function HomeCard({ home, large = false, sizes }: { home: Home; l
       </div>
       <div className="flex items-end justify-between gap-3 p-5">
         <div>
-          <h3 className={`display ${large ? "text-[34px]" : "text-[26px]"}`}>{home.name}</h3>
+          <Heading className={`display ${large ? "text-[34px]" : "text-[26px]"}`}>{home.name}</Heading>
           <p className="mt-1 text-sm text-muted">{specs(home)}</p>
         </div>
         <span className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-blush text-clay transition-colors group-hover:bg-clay group-hover:text-white">
