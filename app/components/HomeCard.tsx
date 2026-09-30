@@ -34,6 +34,7 @@ export default function HomeCard({
       </div>
       <div className="flex items-end justify-between gap-3 p-5">
         <div>
+          <p className="text-xs font-medium tracking-wide text-clay uppercase">{home.section}</p>
           <Heading className={`display ${large ? "text-[34px]" : "text-[26px]"}`}>{home.name}</Heading>
           <p className="mt-1 text-sm text-muted">{specs(home)}</p>
         </div>
