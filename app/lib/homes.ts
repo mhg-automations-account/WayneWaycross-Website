@@ -2,12 +2,15 @@
  * Home models on the lot, sourced from familyhomecentercrestview.com/our-homes/.
  * `photo` is the path under the source site's /wp-content/uploads/.
  */
+export type Section = "Single wide" | "Double wide" | "Triple wide";
+
 export type Home = {
   slug: string;
   name: string;
   beds: number;
   baths: number;
   sqft: number;
+  section: Section;
   photo: string;
   source: string;
 };
@@ -98,6 +101,13 @@ const raw: [string, number, number, number, string, string][] = [
   ["Yukon", 4, 3, 1976, "2020/12/JWL_0501.jpg", "yukon"],
 ];
 
+// Section per source slug, from the source site's singlewides/triplewides categories; everything else is a double wide.
+const singleWides = new Set([
+  "ace", "apache", "brunswick", "cedar-river", "colorado", "escalade", "jlow", "lexi",
+  "mahomes", "naples", "sling-shot", "slugger-3-bed-2-bath-1130-sq-ft", "troy", "tswift", "vin-diesel", "yellow-jacket",
+]);
+const tripleWides = new Set(["arlington", "biltmore", "lone-star", "ponderosa"]);
+
 const slugify = (s: string) => s.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
 export const homes: Home[] = raw.map(([name, beds, baths, sqft, photo, source]) => ({
@@ -106,6 +116,7 @@ export const homes: Home[] = raw.map(([name, beds, baths, sqft, photo, source]) 
   beds,
   baths,
   sqft,
+  section: singleWides.has(source) ? "Single wide" : tripleWides.has(source) ? "Triple wide" : "Double wide",
   photo: UPLOADS + photo,
   source: PROJECT + source + "/",
 }));
