@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import { homes, type Home, type Section } from "../lib/homes";
 import HomeCard from "./HomeCard";
+import { SearchIcon } from "./Icons";
 
 const bedFilters = [
   { label: "All", test: () => true },
@@ -74,6 +75,9 @@ function FilterSelect<T>({
   );
 }
 
+/** Lowercase letters and digits only, so "jlow" finds "J-Low". */
+const normalize = (s: string) => s.toLowerCase().replace(/[^a-z0-9]/g, "");
+
 const sorts: Record<string, { label: string; fn: (a: Home, b: Home) => number }> = {
   name: { label: "Name", fn: (a, b) => a.name.localeCompare(b.name) },
   small: { label: "Smallest first", fn: (a, b) => a.sqft - b.sqft },
@@ -82,28 +86,30 @@ const sorts: Record<string, { label: string; fn: (a: Home, b: Home) => number }>
 
 /** Filterable grid of every home model on the lot. */
 export default function HomesBrowser() {
+  const [query, setQuery] = useState("");
   const [beds, setBeds] = useState(0);
   const [section, setSection] = useState(0);
   const [baths, setBaths] = useState(0);
   const [sqft, setSqft] = useState(0);
   const [sort, setSort] = useState("name");
 
-  const list = useMemo(
-    () =>
-      homes
-        .filter(
-          (h) =>
-            bedFilters[beds].test(h.beds) &&
-            sectionFilters[section].test(h.section) &&
-            bathFilters[baths].test(h.baths) &&
-            sqftFilters[sqft].test(h.sqft),
-        )
-        .sort(sorts[sort].fn),
-    [beds, section, baths, sqft, sort],
-  );
+  const list = useMemo(() => {
+    const q = normalize(query);
+    return homes
+      .filter(
+        (h) =>
+          normalize(h.name).includes(q) &&
+          bedFilters[beds].test(h.beds) &&
+          sectionFilters[section].test(h.section) &&
+          bathFilters[baths].test(h.baths) &&
+          sqftFilters[sqft].test(h.sqft),
+      )
+      .sort(sorts[sort].fn);
+  }, [query, beds, section, baths, sqft, sort]);
 
-  const filtered = beds || section || baths || sqft;
+  const filtered = query || beds || section || baths || sqft;
   const clear = () => {
+    setQuery("");
     setBeds(0);
     setSection(0);
     setBaths(0);
@@ -112,6 +118,24 @@ export default function HomesBrowser() {
 
   return (
     <>
+      <div className="mx-auto mb-6 max-w-xl">
+        <label className="sr-only" htmlFor="search">
+          Search homes by name
+        </label>
+        <div className="relative">
+          <SearchIcon className="pointer-events-none absolute top-1/2 left-4 h-4 w-4 -translate-y-1/2 text-muted" />
+          <input
+            id="search"
+            type="search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            placeholder="Search by home name"
+            autoComplete="off"
+            className="w-full rounded-full border border-line bg-card py-3 pr-4 pl-11 text-ink outline-none placeholder:text-muted focus:border-clay"
+          />
+        </div>
+      </div>
+
       <div className="flex flex-col items-center justify-between gap-4 border-b border-line pb-6 lg:flex-row">
         <div className="flex flex-wrap justify-center gap-2" role="group" aria-label="Filter by bedrooms">
           {bedFilters.map((f, i) => (

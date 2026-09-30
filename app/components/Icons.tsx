@@ -20,6 +20,13 @@ export const HouseIcon = ({ className }: P) => (
   </svg>
 );
 
+export const SearchIcon = ({ className }: P) => (
+  <svg {...base} className={className} aria-hidden="true">
+    <circle cx="11" cy="11" r="7" />
+    <path d="m20 20-3.5-3.5" />
+  </svg>
+);
+
 export const KeyIcon = ({ className }: P) => (
   <svg {...base} className={className} aria-hidden="true">
     <circle cx="8" cy="15" r="4" />
