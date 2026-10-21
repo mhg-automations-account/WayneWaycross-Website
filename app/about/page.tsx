@@ -12,14 +12,14 @@ import { site } from "../lib/site";
 export const metadata = pageMetadata({
   title: `About ${site.fullName}: Mobile Home Dealer in Waycross, GA`,
   description:
-    "Wayne Frier Home Center of Waycross is the exclusive Live Oak Homes retailer in Waycross, GA, with over 90 years of combined experience and homes built right here in Georgia.",
+    "Wayne Frier Home Center of Waycross is the exclusive Live Oak Homes retailer in Waycross, GA, one of the largest inventories of manufactured homes in the Southeast, and homes built right here in the Waycross area.",
   path: "/about",
 });
 
 const stats = [
-  { value: "90+", label: "Years of combined experience" },
-  { value: "8", label: "Home series to choose from" },
-  { value: "3", label: "Singlewide, doublewide and triplewide homes" },
+  { value: "1972", label: "Wayne Frier Home Center brand established in Florida" },
+  { value: "1997", label: "Year our Waycross location opened" },
+  { value: "30+", label: "Years our leadership has been with the Wayne Frier Group" },
 ];
 
 const services = [
@@ -48,7 +48,7 @@ const services = [
 const covered = [
   "Exclusive Live Oak Homes retailer in Waycross",
   "Energy Star certified homes",
-  "Homes built right here in Georgia",
+  "Homes built right here in the Waycross area",
   "Honest guidance, start to finish",
 ];
 
@@ -83,18 +83,21 @@ export default function AboutPage() {
               </Reveal>
               <Reveal delay={100} className="mt-6 space-y-5 text-lg leading-relaxed text-muted">
                 <p>
-                  With over 90 years of combined experience, our staff at {site.fullName} is prepared to assist you
-                  with every step of the mobile home buying process.
+                  The Wayne Frier Home Center brand was established in Florida in 1972, and our Waycross location
+                  opened in 1997. Our leadership brings more than 30 years of affiliation with the Wayne Frier Group
+                  and has served customers at this location since 2002.
                 </p>
                 <p>
-                  We have a variety of models and home styles, so there is sure to be a home for everyone. We are one
-                  of the only mobile home retailers to feature singlewide, doublewide and triplewide homes, and
-                  because our homes are built in Waycross, you save thousands in freight.
+                  As an exclusive Live Oak Homes dealership, {site.fullName} offers one of the largest inventories of
+                  manufactured homes in the Southeast. Our homes are built right here in the Waycross area, helping
+                  local customers save thousands of dollars in freight costs. Built in Waycross and sold in
+                  Waycross, that local connection delivers real value.
                 </p>
                 <p>
-                  As the exclusive Live Oak Homes retailer in Waycross, our homes are manufactured right in our
-                  backyard, so you receive the best service available after the sale. We understand the importance of
-                  a home, so our customers and their satisfaction are our #1 priority.
+                  Having the manufacturing facilities nearby also benefits our customers when it comes to service and
+                  support. Our experienced sales team, including members with more than 18 years in the industry, is
+                  here to answer questions, explain options, and help you find the right home for your needs and
+                  budget.
                 </p>
               </Reveal>
             </div>

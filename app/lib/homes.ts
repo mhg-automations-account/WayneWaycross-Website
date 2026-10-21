@@ -4,6 +4,7 @@
  * dealership lists on its Singlewides, Doublewides or Triplewides pages.
  */
 import raw from "./homes.json";
+import { lotSlugs } from "./lot";
 
 export type Section = "Single wide" | "Double wide" | "Triple wide";
 
@@ -34,16 +35,17 @@ export type Home = {
   tour: string | null;
   /** Clearance markdown in dollars, from the dealership's Specials page. */
   markdown?: number;
+  /** True when this model is on the lot to tour right now (see lot.ts). */
+  onLot: boolean;
 };
 
 const MARKDOWNS: Record<string, number> = { tundra: 8000, horizon: 6500 };
 
-export const homes: Home[] = (raw as Omit<Home, "markdown">[]).map((h) => ({ ...h, markdown: MARKDOWNS[h.slug] }));
-
-/** Hand-picked for the home page: the Home of the Month plus a spread of sizes. */
-export const featured = ["tundra", "arlington", "lone-star", "georgia-giant", "cardinal"].map(
-  (slug) => homes.find((h) => h.slug === slug)!,
-);
+export const homes: Home[] = (raw as Omit<Home, "markdown" | "onLot">[]).map((h) => ({
+  ...h,
+  markdown: MARKDOWNS[h.slug],
+  onLot: lotSlugs.has(h.slug),
+}));
 
 /** Homes marked down on the Specials page. */
 export const clearance = homes.filter((h) => h.markdown);

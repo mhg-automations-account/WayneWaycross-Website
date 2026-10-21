@@ -32,6 +32,11 @@ export default function HomeCard({
           sizes={sizes}
           className="object-cover transition-transform duration-700 ease-out group-hover:scale-[1.04]"
         />
+        {home.onLot && (
+          <span className="absolute top-3 right-3 rounded-full bg-white/95 px-3 py-1 text-xs font-semibold text-clay shadow">
+            Available on Lot
+          </span>
+        )}
         {home.markdown && (
           <span className="absolute top-3 left-3 rounded-full bg-clay px-3 py-1 text-xs font-semibold text-white shadow">
             Marked down {usd(home.markdown)}
