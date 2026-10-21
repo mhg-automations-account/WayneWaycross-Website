@@ -8,7 +8,7 @@ import { site } from "../lib/site";
 
 export const metadata = pageMetadata({
   title: `Mobile Home Floor Plans for Sale | ${site.fullName}`,
-  description: `Browse ${homes.length} single and multi-section mobile home floor plans, from 1 to 5 bedrooms, on our lot in Crestview, FL. Financing, delivery and setup available.`,
+  description: `Browse ${homes.length} singlewide, doublewide and triplewide Live Oak Homes floor plans, from 2 to 5 bedrooms, at Wayne Frier Home Center of Waycross in Waycross, GA.`,
   path: "/homes",
 });
 
@@ -22,8 +22,8 @@ export default function HomesPage() {
           <p className="text-sm font-medium tracking-wide text-clay uppercase">Our homes</p>
           <h1 className="display hero-in mt-4 text-[clamp(3rem,7vw,5.5rem)]">Find your floor plan</h1>
           <p className="hero-in mx-auto mt-5 max-w-xl text-lg text-muted [animation-delay:150ms]">
-            {homes.length} models from cozy one-bedrooms to five-bedroom family homes. Come walk through any of them on
-            our lot in {site.city}.
+            {homes.length} floor plans across eight home series, from cozy two-bedrooms to five-bedroom family homes. Come
+            see them at our lot in {site.city}.
           </p>
         </section>
 

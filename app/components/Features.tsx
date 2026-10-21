@@ -1,23 +1,23 @@
 import Reveal from "./Reveal";
 import { HouseIcon, ShieldIcon, TreeIcon } from "./Icons";
 
-const brands = ["Live Oak Homes", "TownHomes", "Singlewide", "Doublewide", "Triplewide"];
+const brands = ["Live Oak Homes", "Singlewide", "Doublewide", "Triplewide", "Energy Star"];
 
 const features = [
   {
     icon: HouseIcon,
     title: "Homes for every family",
-    body: "Single, double and triple-wide floor plans from Live Oak Homes and TownHomes, ready to tour on our lot.",
+    body: "Singlewide, doublewide and triplewide floor plans from Live Oak Homes, with customization options to fit your needs.",
   },
   {
     icon: ShieldIcon,
-    title: "Built to last",
-    body: "2×4 and 2×6 framing, ¾-inch floors, upgraded insulation, OSB end walls and nailed shingles.",
+    title: "Built in Georgia",
+    body: "Built in a controlled factory environment to meet and exceed the federal HUD code, with Energy Star certified options.",
   },
   {
     icon: TreeIcon,
-    title: "Land, handled",
-    body: "Land/home packages, land clearing, well drilling, delivery and setup, all under one roof.",
+    title: "Delivered and set up",
+    body: "Built in Waycross, sold in Waycross. Thousands saved in freight, with local delivery and outstanding service.",
   },
 ];
 
@@ -43,14 +43,14 @@ export default function Features() {
             A home you can grow into
           </Reveal>
           <Reveal as="p" delay={120} className="mt-4 text-lg text-muted">
-            Your #1 choice for quality and savings in Northwest Florida.
+            Quality homes, exceptional value, locally delivered.
           </Reveal>
         </div>
 
         <div className="mx-auto mt-16 grid max-w-[1200px] gap-8 md:grid-cols-3">
           {features.map((f, i) => (
             <Reveal key={f.title} delay={200 + i * 140}>
-              <article className="h-full rounded-[28px] border border-line bg-card p-8 text-left transition-all duration-500 ease-out hover:-translate-y-1.5 hover:bg-[#f5f9ef] hover:shadow-[0_24px_50px_-24px_rgba(40,70,30,0.35)]">
+              <article className="h-full rounded-[28px] border border-line bg-card p-8 text-left transition-all duration-500 ease-out hover:-translate-y-1.5 hover:bg-[#f9f5ef] hover:shadow-[0_24px_50px_-24px_rgba(20,20,20,0.35)]">
                 <span className="grid h-12 w-12 place-items-center rounded-2xl bg-blush text-clay">
                   <f.icon className="h-6 w-6" />
                 </span>

@@ -6,17 +6,17 @@ import { ArrowRight, Check, Logo, PhoneIcon } from "./Icons";
 import QuoteForm from "./QuoteForm";
 
 export function CallToAction() {
-  const trust = ["Licensed Dealer", "Financing Available", "Delivery Included"];
+  const trust = ["Exclusive Live Oak Homes retailer", "Energy Star certified homes", "Local delivery & setup"];
   return (
     <section id="contact" className="relative scroll-mt-24 overflow-hidden px-4 py-24 md:py-32">
       <Image
-        src="https://familyhomecentercrestview.com/wp-content/uploads/2020/07/JWL_4429_13.jpg"
+        src="/hero.jpg"
         alt=""
         fill
         sizes="100vw"
         className="object-cover"
       />
-      <div className="absolute inset-0 bg-[#141a11]/80" />
+      <div className="absolute inset-0 bg-[#141414]/80" />
 
       <div className="relative mx-auto grid max-w-[1200px] items-center gap-14 lg:grid-cols-[1.1fr_1fr]">
         <div className="text-white">
@@ -24,7 +24,7 @@ export function CallToAction() {
             Ready to find your way home?
           </Reveal>
           <Reveal as="p" delay={120} className="mt-6 max-w-lg text-lg leading-relaxed text-white/80">
-            Tell us a little about what you&rsquo;re looking for and we&rsquo;ll put together a free home and land
+            Tell us a little about what you&rsquo;re looking for and we&rsquo;ll put together a free
             quote. Or visit our lot in {site.city}{" "}&mdash; we&rsquo;d love to meet your family.
           </Reveal>
           <Reveal delay={240} className="mt-9 flex flex-wrap gap-4">
@@ -59,7 +59,7 @@ export function CallToAction() {
           delay={200}
           className="rounded-[28px] border border-white/15 bg-white/[0.06] p-6 shadow-[0_40px_80px_-30px_rgba(0,0,0,0.6)] backdrop-blur-md sm:p-10"
         >
-          <h3 className="display text-[clamp(1.8rem,3vw,2.4rem)] text-white">Get a Free Home &amp; Land Quote</h3>
+          <h3 className="display text-[clamp(1.8rem,3vw,2.4rem)] text-white">Get a Free Quote</h3>
           <div className="mt-7">
             <QuoteForm />
           </div>
@@ -72,10 +72,12 @@ export function CallToAction() {
 export function Footer() {
   const links = [
     { href: "/homes", label: "Homes" },
-    { href: "/#financing", label: "Financing" },
+    { href: "/specials", label: "Specials" },
+    { href: "/upgrades", label: "Upgrades" },
     { href: "/about", label: "About Us" },
   ];
   const { street, city, region, postalCode } = site.address;
+  const hours = site.hoursText.map(([d, t]) => `${d} ${t}`).join(" · ");
   return (
     <footer className="border-t border-line bg-band px-6 py-8">
       <div className="mx-auto flex max-w-[1200px] flex-col items-center justify-between gap-5 md:flex-row">
@@ -89,9 +91,9 @@ export function Footer() {
             </li>
           ))}
           <li>
-            <a href={site.phoneHref} className="transition-colors hover:text-ink">
+            <Link href="/contact" className="transition-colors hover:text-ink">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
             <a href={site.facebook} target="_blank" rel="noopener noreferrer" className="transition-colors hover:text-ink">
@@ -110,7 +112,7 @@ export function Footer() {
         <a href={site.phoneHref} className="transition-colors hover:text-ink">
           {site.phone}
         </a>
-        <span>Mon–Fri 9am–5:30pm · Sat 9am–4:30pm</span>
+        <span>{hours}</span>
       </address>
     </footer>
   );

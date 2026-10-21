@@ -1,0 +1,1975 @@
+[
+ {
+  "slug": "5k",
+  "name": "5K",
+  "beds": 5,
+  "baths": 3.0,
+  "sqft": 2136,
+  "section": "Double wide",
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/5k/0.jpg",
+   "/homes/5k/1.jpg",
+   "/homes/5k/2.jpg",
+   "/homes/5k/3.jpg",
+   "/homes/5k/4.jpg",
+   "/homes/5k/5.jpg",
+   "/homes/5k/6.jpg",
+   "/homes/5k/7.jpg",
+   "/homes/5k/8.jpg",
+   "/homes/5k/9.jpg",
+   "/homes/5k/10.jpg",
+   "/homes/5k/11.jpg",
+   "/homes/5k/12.jpg",
+   "/homes/5k/13.jpg",
+   "/homes/5k/14.jpg",
+   "/homes/5k/15.jpg",
+   "/homes/5k/16.jpg",
+   "/homes/5k/17.jpg",
+   "/homes/5k/18.jpg",
+   "/homes/5k/19.jpg",
+   "/homes/5k/20.jpg",
+   "/homes/5k/21.jpg",
+   "/homes/5k/22.jpg",
+   "/homes/5k/23.jpg",
+   "/homes/5k/24.jpg"
+  ],
+  "tour": "pUGfANK3GEc"
+ },
+ {
+  "slug": "ace",
+  "name": "Ace",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1130,
+  "section": "Single wide",
+  "series": [
+   "Classic Oaks"
+  ],
+  "images": [
+   "/homes/ace/0.jpg",
+   "/homes/ace/1.jpg",
+   "/homes/ace/2.jpg",
+   "/homes/ace/3.jpg",
+   "/homes/ace/4.jpg",
+   "/homes/ace/5.jpg",
+   "/homes/ace/6.jpg",
+   "/homes/ace/7.jpg",
+   "/homes/ace/8.jpg",
+   "/homes/ace/9.jpg",
+   "/homes/ace/10.jpg",
+   "/homes/ace/11.jpg",
+   "/homes/ace/12.jpg",
+   "/homes/ace/13.jpg",
+   "/homes/ace/14.jpg",
+   "/homes/ace/15.jpg",
+   "/homes/ace/16.jpg"
+  ],
+  "tour": "PAtdc74nKHs"
+ },
+ {
+  "slug": "arlington",
+  "name": "Arlington",
+  "beds": 4,
+  "baths": 3.0,
+  "sqft": 2514,
+  "section": "Triple wide",
+  "series": [
+   "Plantation Series"
+  ],
+  "images": [
+   "/homes/arlington/0.jpg",
+   "/homes/arlington/1.jpg",
+   "/homes/arlington/2.jpg",
+   "/homes/arlington/3.jpg",
+   "/homes/arlington/4.jpg",
+   "/homes/arlington/5.jpg",
+   "/homes/arlington/6.jpg",
+   "/homes/arlington/7.jpg",
+   "/homes/arlington/8.jpg",
+   "/homes/arlington/9.jpg",
+   "/homes/arlington/10.jpg",
+   "/homes/arlington/11.jpg",
+   "/homes/arlington/12.jpg",
+   "/homes/arlington/13.jpg",
+   "/homes/arlington/14.jpg",
+   "/homes/arlington/15.jpg",
+   "/homes/arlington/16.jpg",
+   "/homes/arlington/17.jpg"
+  ],
+  "tour": "MzLpoWfHmgF"
+ },
+ {
+  "slug": "blitz",
+  "name": "Blitz",
+  "beds": 4,
+  "baths": 3.0,
+  "sqft": 1976,
+  "section": null,
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/blitz/0.jpg",
+   "/homes/blitz/1.jpg",
+   "/homes/blitz/2.jpg",
+   "/homes/blitz/3.jpg",
+   "/homes/blitz/4.jpg",
+   "/homes/blitz/5.jpg",
+   "/homes/blitz/6.jpg",
+   "/homes/blitz/7.jpg",
+   "/homes/blitz/8.jpg",
+   "/homes/blitz/9.jpg",
+   "/homes/blitz/10.jpg",
+   "/homes/blitz/11.jpg",
+   "/homes/blitz/12.jpg",
+   "/homes/blitz/13.jpg"
+  ],
+  "tour": "LjW4L3z5DNC"
+ },
+ {
+  "slug": "blue-ridge",
+  "name": "Blue Ridge",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1720,
+  "section": "Double wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/blue-ridge/0.jpg",
+   "/homes/blue-ridge/1.jpg",
+   "/homes/blue-ridge/2.jpg",
+   "/homes/blue-ridge/3.jpg",
+   "/homes/blue-ridge/4.jpg",
+   "/homes/blue-ridge/5.jpg",
+   "/homes/blue-ridge/6.jpg",
+   "/homes/blue-ridge/7.jpg",
+   "/homes/blue-ridge/8.jpg",
+   "/homes/blue-ridge/9.jpg",
+   "/homes/blue-ridge/10.jpg",
+   "/homes/blue-ridge/11.jpg",
+   "/homes/blue-ridge/12.jpg",
+   "/homes/blue-ridge/13.jpg",
+   "/homes/blue-ridge/14.jpg",
+   "/homes/blue-ridge/15.jpg",
+   "/homes/blue-ridge/16.jpg",
+   "/homes/blue-ridge/17.jpg"
+  ],
+  "tour": "Y5gYfDDWi6c"
+ },
+ {
+  "slug": "bolt",
+  "name": "Bolt",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1130,
+  "section": "Single wide",
+  "series": [
+   "Runner Series"
+  ],
+  "images": [
+   "/homes/bolt/0.jpg",
+   "/homes/bolt/1.jpg",
+   "/homes/bolt/2.jpg",
+   "/homes/bolt/3.jpg",
+   "/homes/bolt/4.jpg",
+   "/homes/bolt/5.jpg",
+   "/homes/bolt/6.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "boulder",
+  "name": "Boulder",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1720,
+  "section": "Double wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/boulder/0.jpg",
+   "/homes/boulder/1.jpg",
+   "/homes/boulder/2.jpg",
+   "/homes/boulder/3.jpg",
+   "/homes/boulder/4.jpg",
+   "/homes/boulder/5.jpg",
+   "/homes/boulder/6.jpg",
+   "/homes/boulder/7.jpg",
+   "/homes/boulder/8.jpg",
+   "/homes/boulder/9.jpg",
+   "/homes/boulder/10.jpg",
+   "/homes/boulder/11.jpg",
+   "/homes/boulder/12.jpg",
+   "/homes/boulder/13.jpg",
+   "/homes/boulder/14.jpg"
+  ],
+  "tour": "CryLBivoWoa"
+ },
+ {
+  "slug": "buck-creek",
+  "name": "Buck Creek",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1130,
+  "section": "Single wide",
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/buck-creek/0.jpg",
+   "/homes/buck-creek/1.jpg",
+   "/homes/buck-creek/2.jpg",
+   "/homes/buck-creek/3.jpg",
+   "/homes/buck-creek/4.jpg",
+   "/homes/buck-creek/5.jpg",
+   "/homes/buck-creek/6.jpg",
+   "/homes/buck-creek/7.jpg",
+   "/homes/buck-creek/8.jpg",
+   "/homes/buck-creek/9.jpg",
+   "/homes/buck-creek/10.jpg",
+   "/homes/buck-creek/11.jpg",
+   "/homes/buck-creek/12.jpg",
+   "/homes/buck-creek/13.jpg",
+   "/homes/buck-creek/14.jpg",
+   "/homes/buck-creek/15.jpg"
+  ],
+  "tour": "gqievMsKteJ"
+ },
+ {
+  "slug": "buckhead",
+  "name": "Buckhead",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1720,
+  "section": "Double wide",
+  "series": [
+   "Signature Oak Series"
+  ],
+  "images": [
+   "/homes/buckhead/0.jpg",
+   "/homes/buckhead/1.jpg",
+   "/homes/buckhead/2.jpg",
+   "/homes/buckhead/3.jpg",
+   "/homes/buckhead/4.jpg",
+   "/homes/buckhead/5.jpg",
+   "/homes/buckhead/6.jpg",
+   "/homes/buckhead/7.jpg",
+   "/homes/buckhead/8.jpg",
+   "/homes/buckhead/9.jpg",
+   "/homes/buckhead/10.jpg"
+  ],
+  "tour": "YKcJzfKJkPt"
+ },
+ {
+  "slug": "canyon",
+  "name": "Canyon",
+  "beds": 3,
+  "baths": 2.5,
+  "sqft": 1560,
+  "section": "Double wide",
+  "series": [
+   "Extreme Series"
+  ],
+  "images": [
+   "/homes/canyon/0.jpg",
+   "/homes/canyon/1.jpg",
+   "/homes/canyon/2.jpg",
+   "/homes/canyon/3.jpg",
+   "/homes/canyon/4.jpg",
+   "/homes/canyon/5.jpg",
+   "/homes/canyon/6.jpg",
+   "/homes/canyon/7.jpg",
+   "/homes/canyon/8.jpg",
+   "/homes/canyon/9.jpg",
+   "/homes/canyon/10.jpg"
+  ],
+  "tour": "7Du6G9UASZi"
+ },
+ {
+  "slug": "cardinal",
+  "name": "Cardinal",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1248,
+  "section": "Double wide",
+  "series": [
+   "Classic Oaks"
+  ],
+  "images": [
+   "/homes/cardinal/0.jpg",
+   "/homes/cardinal/1.jpg",
+   "/homes/cardinal/2.jpg",
+   "/homes/cardinal/3.jpg",
+   "/homes/cardinal/4.jpg",
+   "/homes/cardinal/5.jpg",
+   "/homes/cardinal/6.jpg",
+   "/homes/cardinal/7.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "cedar-river",
+  "name": "Cedar River",
+  "beds": 2,
+  "baths": 1.0,
+  "sqft": 860,
+  "section": "Single wide",
+  "series": [
+   "Classic Oaks"
+  ],
+  "images": [
+   "/homes/cedar-river/0.jpg",
+   "/homes/cedar-river/1.jpg",
+   "/homes/cedar-river/2.jpg",
+   "/homes/cedar-river/3.jpg",
+   "/homes/cedar-river/4.jpg",
+   "/homes/cedar-river/5.jpg",
+   "/homes/cedar-river/6.jpg",
+   "/homes/cedar-river/7.jpg",
+   "/homes/cedar-river/8.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "charger",
+  "name": "Charger",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1958,
+  "section": "Double wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/charger/0.jpg",
+   "/homes/charger/1.jpg",
+   "/homes/charger/2.jpg",
+   "/homes/charger/3.jpg",
+   "/homes/charger/4.jpg",
+   "/homes/charger/5.jpg",
+   "/homes/charger/6.jpg",
+   "/homes/charger/7.jpg",
+   "/homes/charger/8.jpg",
+   "/homes/charger/9.jpg",
+   "/homes/charger/10.jpg",
+   "/homes/charger/11.jpg",
+   "/homes/charger/12.jpg"
+  ],
+  "tour": "Y71gSeDR9gA"
+ },
+ {
+  "slug": "cobblestone",
+  "name": "Cobblestone",
+  "beds": 4,
+  "baths": 3.0,
+  "sqft": 2314,
+  "section": "Triple wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/cobblestone/0.jpg",
+   "/homes/cobblestone/1.jpg",
+   "/homes/cobblestone/2.jpg",
+   "/homes/cobblestone/3.jpg",
+   "/homes/cobblestone/4.jpg",
+   "/homes/cobblestone/5.jpg",
+   "/homes/cobblestone/6.jpg",
+   "/homes/cobblestone/7.jpg",
+   "/homes/cobblestone/8.jpg",
+   "/homes/cobblestone/9.jpg",
+   "/homes/cobblestone/10.jpg",
+   "/homes/cobblestone/11.jpg",
+   "/homes/cobblestone/12.jpg",
+   "/homes/cobblestone/13.jpg",
+   "/homes/cobblestone/14.jpg",
+   "/homes/cobblestone/15.jpg",
+   "/homes/cobblestone/16.jpg",
+   "/homes/cobblestone/17.jpg",
+   "/homes/cobblestone/18.jpg",
+   "/homes/cobblestone/19.jpg",
+   "/homes/cobblestone/20.jpg",
+   "/homes/cobblestone/21.jpg",
+   "/homes/cobblestone/22.jpg",
+   "/homes/cobblestone/23.jpg",
+   "/homes/cobblestone/24.jpg"
+  ],
+  "tour": "evHU4g48HKT"
+ },
+ {
+  "slug": "dash",
+  "name": "Dash",
+  "beds": 2,
+  "baths": 2.0,
+  "sqft": 979,
+  "section": "Single wide",
+  "series": [
+   "Runner Series"
+  ],
+  "images": [
+   "/homes/dash/0.jpg",
+   "/homes/dash/1.jpg",
+   "/homes/dash/2.jpg",
+   "/homes/dash/3.jpg",
+   "/homes/dash/4.jpg",
+   "/homes/dash/5.jpg",
+   "/homes/dash/6.jpg",
+   "/homes/dash/7.jpg",
+   "/homes/dash/8.jpg",
+   "/homes/dash/9.jpg",
+   "/homes/dash/10.jpg",
+   "/homes/dash/11.jpg",
+   "/homes/dash/12.jpg",
+   "/homes/dash/13.jpg"
+  ],
+  "tour": "VftbR2WRjAz"
+ },
+ {
+  "slug": "defender",
+  "name": "Defender",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1300,
+  "section": "Double wide",
+  "series": [
+   "Signature Oak Series"
+  ],
+  "images": [
+   "/homes/defender/0.jpg",
+   "/homes/defender/1.jpg",
+   "/homes/defender/2.jpg",
+   "/homes/defender/3.jpg",
+   "/homes/defender/4.jpg",
+   "/homes/defender/5.jpg",
+   "/homes/defender/6.jpg",
+   "/homes/defender/7.jpg",
+   "/homes/defender/8.jpg",
+   "/homes/defender/9.jpg",
+   "/homes/defender/10.jpg",
+   "/homes/defender/11.jpg",
+   "/homes/defender/12.jpg",
+   "/homes/defender/13.jpg",
+   "/homes/defender/14.jpg",
+   "/homes/defender/15.jpg",
+   "/homes/defender/16.jpg",
+   "/homes/defender/17.jpg",
+   "/homes/defender/18.jpg",
+   "/homes/defender/19.jpg"
+  ],
+  "tour": "7ATrh7F2Tme"
+ },
+ {
+  "slug": "dogwood",
+  "name": "Dogwood",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 2136,
+  "section": "Double wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/dogwood/0.jpg",
+   "/homes/dogwood/1.jpg",
+   "/homes/dogwood/2.jpg",
+   "/homes/dogwood/3.jpg",
+   "/homes/dogwood/4.jpg",
+   "/homes/dogwood/5.jpg",
+   "/homes/dogwood/6.jpg",
+   "/homes/dogwood/7.jpg",
+   "/homes/dogwood/8.jpg",
+   "/homes/dogwood/9.jpg",
+   "/homes/dogwood/10.jpg",
+   "/homes/dogwood/11.jpg",
+   "/homes/dogwood/12.jpg",
+   "/homes/dogwood/13.jpg",
+   "/homes/dogwood/14.jpg"
+  ],
+  "tour": "wmAJpoXQ9rW"
+ },
+ {
+  "slug": "driftwood",
+  "name": "Driftwood",
+  "beds": 2,
+  "baths": 2.0,
+  "sqft": 979,
+  "section": "Single wide",
+  "series": [
+   "Signature Oak Series"
+  ],
+  "images": [
+   "/homes/driftwood/0.jpg",
+   "/homes/driftwood/1.jpg",
+   "/homes/driftwood/2.jpg",
+   "/homes/driftwood/3.jpg",
+   "/homes/driftwood/4.jpg",
+   "/homes/driftwood/5.jpg",
+   "/homes/driftwood/6.jpg",
+   "/homes/driftwood/7.jpg",
+   "/homes/driftwood/8.jpg",
+   "/homes/driftwood/9.jpg",
+   "/homes/driftwood/10.jpg",
+   "/homes/driftwood/11.jpg",
+   "/homes/driftwood/12.jpg",
+   "/homes/driftwood/13.jpg",
+   "/homes/driftwood/14.jpg",
+   "/homes/driftwood/15.jpg"
+  ],
+  "tour": "JzsHbrb7zwF"
+ },
+ {
+  "slug": "earnhardt",
+  "name": "Earnhardt",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 1560,
+  "section": "Double wide",
+  "series": [
+   "Runner SS"
+  ],
+  "images": [
+   "/homes/earnhardt/0.jpg",
+   "/homes/earnhardt/1.jpg",
+   "/homes/earnhardt/2.jpg",
+   "/homes/earnhardt/3.jpg",
+   "/homes/earnhardt/4.jpg",
+   "/homes/earnhardt/5.jpg",
+   "/homes/earnhardt/6.jpg",
+   "/homes/earnhardt/7.jpg",
+   "/homes/earnhardt/8.jpg",
+   "/homes/earnhardt/9.jpg",
+   "/homes/earnhardt/10.jpg",
+   "/homes/earnhardt/11.jpg"
+  ],
+  "tour": "EMZEdzBBmKx"
+ },
+ {
+  "slug": "escalade",
+  "name": "Escalade",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1130,
+  "section": "Single wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/escalade/0.jpg",
+   "/homes/escalade/1.jpg",
+   "/homes/escalade/2.jpg",
+   "/homes/escalade/3.jpg",
+   "/homes/escalade/4.jpg",
+   "/homes/escalade/5.jpg",
+   "/homes/escalade/6.jpg",
+   "/homes/escalade/7.jpg",
+   "/homes/escalade/8.jpg",
+   "/homes/escalade/9.jpg",
+   "/homes/escalade/10.jpg",
+   "/homes/escalade/11.jpg",
+   "/homes/escalade/12.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "fancy",
+  "name": "Fancy",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 2254,
+  "section": "Double wide",
+  "series": [
+   "Classic Oaks"
+  ],
+  "images": [
+   "/homes/fancy/0.jpg",
+   "/homes/fancy/1.jpg",
+   "/homes/fancy/2.jpg",
+   "/homes/fancy/3.jpg",
+   "/homes/fancy/4.jpg",
+   "/homes/fancy/5.jpg",
+   "/homes/fancy/6.jpg",
+   "/homes/fancy/7.jpg",
+   "/homes/fancy/8.jpg",
+   "/homes/fancy/9.jpg",
+   "/homes/fancy/10.jpg",
+   "/homes/fancy/11.jpg",
+   "/homes/fancy/12.jpg",
+   "/homes/fancy/13.jpg"
+  ],
+  "tour": "Ke8rhxCdJ5b"
+ },
+ {
+  "slug": "fat-boy",
+  "name": "Fat Boy",
+  "beds": 2,
+  "baths": 2.0,
+  "sqft": 830,
+  "section": "Single wide",
+  "series": [],
+  "images": [
+   "/homes/fat-boy/0.jpg",
+   "/homes/fat-boy/1.jpg",
+   "/homes/fat-boy/2.jpg",
+   "/homes/fat-boy/3.jpg",
+   "/homes/fat-boy/4.jpg",
+   "/homes/fat-boy/5.jpg",
+   "/homes/fat-boy/6.jpg",
+   "/homes/fat-boy/7.jpg",
+   "/homes/fat-boy/8.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "flash",
+  "name": "Flash",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 936,
+  "section": "Double wide",
+  "series": [
+   "Runner Series"
+  ],
+  "images": [
+   "/homes/flash/0.jpg",
+   "/homes/flash/1.jpg",
+   "/homes/flash/2.jpg",
+   "/homes/flash/3.jpg",
+   "/homes/flash/4.jpg",
+   "/homes/flash/5.jpg",
+   "/homes/flash/6.jpg",
+   "/homes/flash/7.jpg",
+   "/homes/flash/8.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "gametime",
+  "name": "Gametime",
+  "beds": 4,
+  "baths": 3.0,
+  "sqft": 2254,
+  "section": "Double wide",
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/gametime/0.jpg",
+   "/homes/gametime/1.jpg",
+   "/homes/gametime/2.jpg",
+   "/homes/gametime/3.jpg",
+   "/homes/gametime/4.jpg",
+   "/homes/gametime/5.jpg",
+   "/homes/gametime/6.jpg",
+   "/homes/gametime/7.jpg",
+   "/homes/gametime/8.jpg",
+   "/homes/gametime/9.jpg",
+   "/homes/gametime/10.jpg",
+   "/homes/gametime/11.jpg",
+   "/homes/gametime/12.jpg",
+   "/homes/gametime/13.jpg",
+   "/homes/gametime/14.jpg",
+   "/homes/gametime/15.jpg",
+   "/homes/gametime/16.jpg",
+   "/homes/gametime/17.jpg",
+   "/homes/gametime/18.jpg",
+   "/homes/gametime/19.jpg",
+   "/homes/gametime/20.jpg",
+   "/homes/gametime/21.jpg",
+   "/homes/gametime/22.jpg",
+   "/homes/gametime/23.jpg",
+   "/homes/gametime/24.jpg",
+   "/homes/gametime/25.jpg",
+   "/homes/gametime/26.jpg",
+   "/homes/gametime/27.jpg"
+  ],
+  "tour": "zusExFffvKg"
+ },
+ {
+  "slug": "georgia-giant",
+  "name": "Georgia Giant",
+  "beds": 5,
+  "baths": 3.0,
+  "sqft": 2373,
+  "section": null,
+  "series": [
+   "Classic Oaks"
+  ],
+  "images": [
+   "/homes/georgia-giant/0.jpg",
+   "/homes/georgia-giant/1.jpg",
+   "/homes/georgia-giant/2.jpg",
+   "/homes/georgia-giant/3.jpg",
+   "/homes/georgia-giant/4.jpg",
+   "/homes/georgia-giant/5.jpg",
+   "/homes/georgia-giant/6.jpg",
+   "/homes/georgia-giant/7.jpg",
+   "/homes/georgia-giant/8.jpg",
+   "/homes/georgia-giant/9.jpg",
+   "/homes/georgia-giant/10.jpg",
+   "/homes/georgia-giant/11.jpg",
+   "/homes/georgia-giant/12.jpg",
+   "/homes/georgia-giant/13.jpg",
+   "/homes/georgia-giant/14.jpg",
+   "/homes/georgia-giant/15.jpg",
+   "/homes/georgia-giant/16.jpg",
+   "/homes/georgia-giant/17.jpg",
+   "/homes/georgia-giant/18.jpg",
+   "/homes/georgia-giant/19.jpg",
+   "/homes/georgia-giant/20.jpg",
+   "/homes/georgia-giant/21.jpg",
+   "/homes/georgia-giant/22.jpg",
+   "/homes/georgia-giant/23.jpg",
+   "/homes/georgia-giant/24.jpg",
+   "/homes/georgia-giant/25.jpg",
+   "/homes/georgia-giant/26.jpg",
+   "/homes/georgia-giant/27.jpg"
+  ],
+  "tour": "1ebYWWELCuP"
+ },
+ {
+  "slug": "guardian",
+  "name": "Guardian",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 1768,
+  "section": null,
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/guardian/0.jpg",
+   "/homes/guardian/1.jpg",
+   "/homes/guardian/2.jpg",
+   "/homes/guardian/3.jpg",
+   "/homes/guardian/4.jpg",
+   "/homes/guardian/5.jpg",
+   "/homes/guardian/6.jpg",
+   "/homes/guardian/7.jpg",
+   "/homes/guardian/8.jpg",
+   "/homes/guardian/9.jpg",
+   "/homes/guardian/10.jpg",
+   "/homes/guardian/11.jpg",
+   "/homes/guardian/12.jpg"
+  ],
+  "tour": "u89oGoNnpqH"
+ },
+ {
+  "slug": "gunner",
+  "name": "Gunner",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1560,
+  "section": null,
+  "series": [
+   "Runner Series"
+  ],
+  "images": [
+   "/homes/gunner/0.jpg",
+   "/homes/gunner/1.jpg",
+   "/homes/gunner/2.jpg",
+   "/homes/gunner/3.jpg",
+   "/homes/gunner/4.jpg",
+   "/homes/gunner/5.jpg",
+   "/homes/gunner/6.jpg",
+   "/homes/gunner/7.jpg",
+   "/homes/gunner/8.jpg",
+   "/homes/gunner/9.jpg",
+   "/homes/gunner/10.jpg",
+   "/homes/gunner/11.jpg"
+  ],
+  "tour": "L1zvUv9kGf5"
+ },
+ {
+  "slug": "hamilton",
+  "name": "Hamilton",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1144,
+  "section": null,
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/hamilton/0.jpg",
+   "/homes/hamilton/1.jpg",
+   "/homes/hamilton/2.jpg",
+   "/homes/hamilton/3.jpg",
+   "/homes/hamilton/4.jpg",
+   "/homes/hamilton/5.jpg",
+   "/homes/hamilton/6.jpg",
+   "/homes/hamilton/7.jpg",
+   "/homes/hamilton/8.jpg",
+   "/homes/hamilton/9.jpg"
+  ],
+  "tour": "hsGkTEnDvA4"
+ },
+ {
+  "slug": "heritage",
+  "name": "Heritage",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1974,
+  "section": null,
+  "series": [
+   "Plantation Series"
+  ],
+  "images": [
+   "/homes/heritage/0.jpg",
+   "/homes/heritage/1.jpg",
+   "/homes/heritage/2.jpg",
+   "/homes/heritage/3.jpg",
+   "/homes/heritage/4.jpg",
+   "/homes/heritage/5.jpg",
+   "/homes/heritage/6.jpg",
+   "/homes/heritage/7.jpg",
+   "/homes/heritage/8.jpg",
+   "/homes/heritage/9.jpg",
+   "/homes/heritage/10.jpg",
+   "/homes/heritage/11.jpg",
+   "/homes/heritage/12.jpg",
+   "/homes/heritage/13.jpg",
+   "/homes/heritage/14.jpg",
+   "/homes/heritage/15.jpg",
+   "/homes/heritage/16.jpg",
+   "/homes/heritage/17.jpg",
+   "/homes/heritage/18.jpg"
+  ],
+  "tour": "b5ynosmaXEL"
+ },
+ {
+  "slug": "high-country",
+  "name": "High Country",
+  "beds": 4,
+  "baths": 2.5,
+  "sqft": 2254,
+  "section": null,
+  "series": [
+   "Extreme Series"
+  ],
+  "images": [
+   "/homes/high-country/0.jpg",
+   "/homes/high-country/1.jpg",
+   "/homes/high-country/2.jpg",
+   "/homes/high-country/3.jpg",
+   "/homes/high-country/4.jpg",
+   "/homes/high-country/5.jpg",
+   "/homes/high-country/6.jpg",
+   "/homes/high-country/7.jpg",
+   "/homes/high-country/8.jpg",
+   "/homes/high-country/9.jpg",
+   "/homes/high-country/10.jpg",
+   "/homes/high-country/11.jpg",
+   "/homes/high-country/12.jpg",
+   "/homes/high-country/13.jpg",
+   "/homes/high-country/14.jpg",
+   "/homes/high-country/15.jpg",
+   "/homes/high-country/16.jpg",
+   "/homes/high-country/17.jpg",
+   "/homes/high-country/18.jpg",
+   "/homes/high-country/19.jpg",
+   "/homes/high-country/20.jpg",
+   "/homes/high-country/21.jpg",
+   "/homes/high-country/22.jpg",
+   "/homes/high-country/23.jpg",
+   "/homes/high-country/24.jpg",
+   "/homes/high-country/25.jpg",
+   "/homes/high-country/26.jpg",
+   "/homes/high-country/27.jpg",
+   "/homes/high-country/28.jpg",
+   "/homes/high-country/29.jpg",
+   "/homes/high-country/30.jpg"
+  ],
+  "tour": "ESKPJBWEMTU"
+ },
+ {
+  "slug": "hilton",
+  "name": "Hilton",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1795,
+  "section": null,
+  "series": [
+   "Plantation Series"
+  ],
+  "images": [
+   "/homes/hilton/0.jpg",
+   "/homes/hilton/1.jpg",
+   "/homes/hilton/2.jpg",
+   "/homes/hilton/3.jpg",
+   "/homes/hilton/4.jpg",
+   "/homes/hilton/5.jpg",
+   "/homes/hilton/6.jpg",
+   "/homes/hilton/7.jpg",
+   "/homes/hilton/8.jpg",
+   "/homes/hilton/9.jpg",
+   "/homes/hilton/10.jpg",
+   "/homes/hilton/11.jpg",
+   "/homes/hilton/12.jpg",
+   "/homes/hilton/13.jpg"
+  ],
+  "tour": "9UnywTVEqBs"
+ },
+ {
+  "slug": "horizon",
+  "name": "Horizon",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1661,
+  "section": null,
+  "series": [
+   "Classic Oaks"
+  ],
+  "images": [
+   "/homes/horizon/0.jpg",
+   "/homes/horizon/1.jpg",
+   "/homes/horizon/2.jpg",
+   "/homes/horizon/3.jpg",
+   "/homes/horizon/4.jpg",
+   "/homes/horizon/5.jpg",
+   "/homes/horizon/6.jpg",
+   "/homes/horizon/7.jpg",
+   "/homes/horizon/8.jpg",
+   "/homes/horizon/9.jpg",
+   "/homes/horizon/10.jpg",
+   "/homes/horizon/11.jpg",
+   "/homes/horizon/12.jpg",
+   "/homes/horizon/13.jpg",
+   "/homes/horizon/14.jpg",
+   "/homes/horizon/15.jpg",
+   "/homes/horizon/16.jpg",
+   "/homes/horizon/17.jpg",
+   "/homes/horizon/18.jpg",
+   "/homes/horizon/19.jpg"
+  ],
+  "tour": "Scd7Lv3MrxF"
+ },
+ {
+  "slug": "jet",
+  "name": "Jet",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1244,
+  "section": null,
+  "series": [
+   "Runner Series"
+  ],
+  "images": [
+   "/homes/jet/0.jpg",
+   "/homes/jet/1.jpg",
+   "/homes/jet/2.jpg",
+   "/homes/jet/3.jpg",
+   "/homes/jet/4.jpg",
+   "/homes/jet/5.jpg",
+   "/homes/jet/6.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "laramie",
+  "name": "Laramie",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1795,
+  "section": null,
+  "series": [
+   "Extreme Series"
+  ],
+  "images": [
+   "/homes/laramie/0.jpg",
+   "/homes/laramie/1.jpg",
+   "/homes/laramie/2.jpg",
+   "/homes/laramie/3.jpg",
+   "/homes/laramie/4.jpg",
+   "/homes/laramie/5.jpg",
+   "/homes/laramie/6.jpg",
+   "/homes/laramie/7.jpg",
+   "/homes/laramie/8.jpg",
+   "/homes/laramie/9.jpg",
+   "/homes/laramie/10.jpg",
+   "/homes/laramie/11.jpg",
+   "/homes/laramie/12.jpg",
+   "/homes/laramie/13.jpg",
+   "/homes/laramie/14.jpg",
+   "/homes/laramie/15.jpg",
+   "/homes/laramie/16.jpg",
+   "/homes/laramie/17.jpg"
+  ],
+  "tour": "xfkdE5mSPtr"
+ },
+ {
+  "slug": "lightning",
+  "name": "Lightning",
+  "beds": 2,
+  "baths": 2.0,
+  "sqft": 728,
+  "section": "Single wide",
+  "series": [
+   "Runner Series"
+  ],
+  "images": [
+   "/homes/lightning/0.jpg",
+   "/homes/lightning/1.jpg",
+   "/homes/lightning/2.jpg",
+   "/homes/lightning/3.jpg",
+   "/homes/lightning/4.jpg",
+   "/homes/lightning/5.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "lone-star",
+  "name": "Lone Star",
+  "beds": 4,
+  "baths": 3.0,
+  "sqft": 2491,
+  "section": "Triple wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/lone-star/0.jpg",
+   "/homes/lone-star/1.jpg",
+   "/homes/lone-star/2.jpg",
+   "/homes/lone-star/3.jpg",
+   "/homes/lone-star/4.jpg",
+   "/homes/lone-star/5.jpg",
+   "/homes/lone-star/6.jpg",
+   "/homes/lone-star/7.jpg",
+   "/homes/lone-star/8.jpg",
+   "/homes/lone-star/9.jpg",
+   "/homes/lone-star/10.jpg",
+   "/homes/lone-star/11.jpg",
+   "/homes/lone-star/12.jpg"
+  ],
+  "tour": "1tn2sxfT3C5"
+ },
+ {
+  "slug": "mahomes",
+  "name": "Mahomes",
+  "beds": 2,
+  "baths": 2.0,
+  "sqft": 979,
+  "section": "Single wide",
+  "series": [
+   "Runner SS"
+  ],
+  "images": [
+   "/homes/mahomes/0.jpg",
+   "/homes/mahomes/1.jpg",
+   "/homes/mahomes/2.jpg",
+   "/homes/mahomes/3.jpg",
+   "/homes/mahomes/4.jpg",
+   "/homes/mahomes/5.jpg",
+   "/homes/mahomes/6.jpg",
+   "/homes/mahomes/7.jpg",
+   "/homes/mahomes/8.jpg",
+   "/homes/mahomes/9.jpg",
+   "/homes/mahomes/10.jpg",
+   "/homes/mahomes/11.jpg",
+   "/homes/mahomes/12.jpg",
+   "/homes/mahomes/13.jpg"
+  ],
+  "tour": "BELqj1N73Lp"
+ },
+ {
+  "slug": "maverick",
+  "name": "Maverick",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1144,
+  "section": null,
+  "series": [
+   "Extreme Series"
+  ],
+  "images": [
+   "/homes/maverick/0.jpg",
+   "/homes/maverick/1.jpg",
+   "/homes/maverick/2.jpg",
+   "/homes/maverick/3.jpg",
+   "/homes/maverick/4.jpg",
+   "/homes/maverick/5.jpg",
+   "/homes/maverick/6.jpg",
+   "/homes/maverick/7.jpg",
+   "/homes/maverick/8.jpg",
+   "/homes/maverick/9.jpg",
+   "/homes/maverick/10.jpg",
+   "/homes/maverick/11.jpg",
+   "/homes/maverick/12.jpg",
+   "/homes/maverick/13.jpg",
+   "/homes/maverick/14.jpg"
+  ],
+  "tour": "b8QdPx2ZwTs"
+ },
+ {
+  "slug": "mill-creek",
+  "name": "Mill Creek",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1040,
+  "section": null,
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/mill-creek/0.jpg",
+   "/homes/mill-creek/1.jpg",
+   "/homes/mill-creek/2.jpg",
+   "/homes/mill-creek/3.jpg",
+   "/homes/mill-creek/4.jpg",
+   "/homes/mill-creek/5.jpg",
+   "/homes/mill-creek/6.jpg",
+   "/homes/mill-creek/7.jpg",
+   "/homes/mill-creek/8.jpg",
+   "/homes/mill-creek/9.jpg"
+  ],
+  "tour": "rffa3CbodB9"
+ },
+ {
+  "slug": "mj",
+  "name": "MJ",
+  "beds": 4,
+  "baths": 3.0,
+  "sqft": 1976,
+  "section": null,
+  "series": [
+   "Runner SS"
+  ],
+  "images": [
+   "/homes/mj/0.jpg",
+   "/homes/mj/1.jpg",
+   "/homes/mj/2.jpg",
+   "/homes/mj/3.jpg",
+   "/homes/mj/4.jpg",
+   "/homes/mj/5.jpg",
+   "/homes/mj/6.jpg",
+   "/homes/mj/7.jpg",
+   "/homes/mj/8.jpg",
+   "/homes/mj/9.jpg",
+   "/homes/mj/10.jpg",
+   "/homes/mj/11.jpg",
+   "/homes/mj/12.jpg",
+   "/homes/mj/13.jpg",
+   "/homes/mj/14.jpg",
+   "/homes/mj/15.jpg",
+   "/homes/mj/16.jpg",
+   "/homes/mj/17.jpg",
+   "/homes/mj/18.jpg",
+   "/homes/mj/19.jpg",
+   "/homes/mj/20.jpg"
+  ],
+  "tour": "jn2UupKWQd1"
+ },
+ {
+  "slug": "naples",
+  "name": "Naples",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1127,
+  "section": "Single wide",
+  "series": [
+   "Signature Oak Series"
+  ],
+  "images": [
+   "/homes/naples/0.jpg",
+   "/homes/naples/1.jpg",
+   "/homes/naples/2.jpg",
+   "/homes/naples/3.jpg",
+   "/homes/naples/4.jpg",
+   "/homes/naples/5.jpg",
+   "/homes/naples/6.jpg",
+   "/homes/naples/7.jpg",
+   "/homes/naples/8.jpg",
+   "/homes/naples/9.jpg",
+   "/homes/naples/10.jpg",
+   "/homes/naples/11.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "nitro",
+  "name": "Nitro",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1560,
+  "section": null,
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/nitro/0.jpg",
+   "/homes/nitro/1.jpg",
+   "/homes/nitro/2.jpg",
+   "/homes/nitro/3.jpg",
+   "/homes/nitro/4.jpg",
+   "/homes/nitro/5.jpg",
+   "/homes/nitro/6.jpg",
+   "/homes/nitro/7.jpg",
+   "/homes/nitro/8.jpg",
+   "/homes/nitro/9.jpg",
+   "/homes/nitro/10.jpg",
+   "/homes/nitro/11.jpg",
+   "/homes/nitro/12.jpg"
+  ],
+  "tour": "3u96mvTGXiv"
+ },
+ {
+  "slug": "nitro-quatro",
+  "name": "Nitro Quatro",
+  "beds": 4,
+  "baths": 3.0,
+  "sqft": 1560,
+  "section": null,
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/nitro-quatro/0.jpg",
+   "/homes/nitro-quatro/1.jpg",
+   "/homes/nitro-quatro/2.jpg",
+   "/homes/nitro-quatro/3.jpg",
+   "/homes/nitro-quatro/4.jpg",
+   "/homes/nitro-quatro/5.jpg",
+   "/homes/nitro-quatro/6.jpg",
+   "/homes/nitro-quatro/7.jpg",
+   "/homes/nitro-quatro/8.jpg",
+   "/homes/nitro-quatro/9.jpg",
+   "/homes/nitro-quatro/10.jpg",
+   "/homes/nitro-quatro/11.jpg",
+   "/homes/nitro-quatro/12.jpg",
+   "/homes/nitro-quatro/13.jpg",
+   "/homes/nitro-quatro/14.jpg",
+   "/homes/nitro-quatro/15.jpg",
+   "/homes/nitro-quatro/16.jpg",
+   "/homes/nitro-quatro/17.jpg",
+   "/homes/nitro-quatro/18.jpg",
+   "/homes/nitro-quatro/19.jpg",
+   "/homes/nitro-quatro/20.jpg",
+   "/homes/nitro-quatro/21.jpg"
+  ],
+  "tour": "Cya3R6cEgQN"
+ },
+ {
+  "slug": "pistol",
+  "name": "Pistol",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1144,
+  "section": null,
+  "series": [
+   "Signature Oak Series"
+  ],
+  "images": [
+   "/homes/pistol/0.jpg",
+   "/homes/pistol/1.jpg",
+   "/homes/pistol/2.jpg",
+   "/homes/pistol/3.jpg",
+   "/homes/pistol/4.jpg",
+   "/homes/pistol/5.jpg",
+   "/homes/pistol/6.jpg",
+   "/homes/pistol/7.jpg",
+   "/homes/pistol/8.jpg",
+   "/homes/pistol/9.jpg",
+   "/homes/pistol/10.jpg",
+   "/homes/pistol/11.jpg",
+   "/homes/pistol/12.jpg"
+  ],
+  "tour": "yGo3qN2D1hv"
+ },
+ {
+  "slug": "predator",
+  "name": "Predator",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 1820,
+  "section": null,
+  "series": [
+   "Classic Oaks"
+  ],
+  "images": [
+   "/homes/predator/0.jpg",
+   "/homes/predator/1.jpg",
+   "/homes/predator/2.jpg",
+   "/homes/predator/3.jpg",
+   "/homes/predator/4.jpg",
+   "/homes/predator/5.jpg",
+   "/homes/predator/6.jpg",
+   "/homes/predator/7.jpg",
+   "/homes/predator/8.jpg",
+   "/homes/predator/9.jpg",
+   "/homes/predator/10.jpg"
+  ],
+  "tour": "CTsm7fTSSzE"
+ },
+ {
+  "slug": "quail-ridge",
+  "name": "Quail Ridge",
+  "beds": 4,
+  "baths": 3.5,
+  "sqft": 2254,
+  "section": "Double wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/quail-ridge/0.jpg",
+   "/homes/quail-ridge/1.jpg",
+   "/homes/quail-ridge/2.jpg",
+   "/homes/quail-ridge/3.jpg",
+   "/homes/quail-ridge/4.jpg",
+   "/homes/quail-ridge/5.jpg",
+   "/homes/quail-ridge/6.jpg",
+   "/homes/quail-ridge/7.jpg",
+   "/homes/quail-ridge/8.jpg",
+   "/homes/quail-ridge/9.jpg",
+   "/homes/quail-ridge/10.jpg",
+   "/homes/quail-ridge/11.jpg",
+   "/homes/quail-ridge/12.jpg",
+   "/homes/quail-ridge/13.jpg",
+   "/homes/quail-ridge/14.jpg",
+   "/homes/quail-ridge/15.jpg",
+   "/homes/quail-ridge/16.jpg",
+   "/homes/quail-ridge/17.jpg",
+   "/homes/quail-ridge/18.jpg",
+   "/homes/quail-ridge/19.jpg",
+   "/homes/quail-ridge/20.jpg",
+   "/homes/quail-ridge/21.jpg",
+   "/homes/quail-ridge/22.jpg",
+   "/homes/quail-ridge/23.jpg",
+   "/homes/quail-ridge/24.jpg",
+   "/homes/quail-ridge/25.jpg",
+   "/homes/quail-ridge/26.jpg",
+   "/homes/quail-ridge/27.jpg",
+   "/homes/quail-ridge/28.jpg",
+   "/homes/quail-ridge/29.jpg"
+  ],
+  "tour": "SAYgpRVZF5V"
+ },
+ {
+  "slug": "raptor",
+  "name": "Raptor",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 1542,
+  "section": null,
+  "series": [
+   "Signature Oak Series"
+  ],
+  "images": [
+   "/homes/raptor/0.jpg",
+   "/homes/raptor/1.jpg",
+   "/homes/raptor/2.jpg",
+   "/homes/raptor/3.jpg",
+   "/homes/raptor/4.jpg",
+   "/homes/raptor/5.jpg",
+   "/homes/raptor/6.jpg",
+   "/homes/raptor/7.jpg",
+   "/homes/raptor/8.jpg",
+   "/homes/raptor/9.jpg",
+   "/homes/raptor/10.jpg",
+   "/homes/raptor/11.jpg",
+   "/homes/raptor/12.jpg",
+   "/homes/raptor/13.jpg",
+   "/homes/raptor/14.jpg",
+   "/homes/raptor/15.jpg",
+   "/homes/raptor/16.jpg",
+   "/homes/raptor/17.jpg",
+   "/homes/raptor/18.jpg",
+   "/homes/raptor/19.jpg",
+   "/homes/raptor/20.jpg"
+  ],
+  "tour": "NBNe4DGhovK"
+ },
+ {
+  "slug": "raven",
+  "name": "Raven",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1260,
+  "section": "Double wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/raven/0.jpg",
+   "/homes/raven/1.jpg",
+   "/homes/raven/2.jpg",
+   "/homes/raven/3.jpg",
+   "/homes/raven/4.jpg",
+   "/homes/raven/5.jpg",
+   "/homes/raven/6.jpg",
+   "/homes/raven/7.jpg",
+   "/homes/raven/8.jpg",
+   "/homes/raven/9.jpg",
+   "/homes/raven/10.jpg",
+   "/homes/raven/11.jpg",
+   "/homes/raven/12.jpg",
+   "/homes/raven/13.jpg",
+   "/homes/raven/14.jpg",
+   "/homes/raven/15.jpg",
+   "/homes/raven/16.jpg",
+   "/homes/raven/17.jpg",
+   "/homes/raven/18.jpg",
+   "/homes/raven/19.jpg",
+   "/homes/raven/20.jpg"
+  ],
+  "tour": "r6upqBr7ahR"
+ },
+ {
+  "slug": "rocky-mountain",
+  "name": "Rocky Mountain",
+  "beds": 5,
+  "baths": 3.0,
+  "sqft": 2076,
+  "section": "Double wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/rocky-mountain/0.jpg",
+   "/homes/rocky-mountain/1.jpg",
+   "/homes/rocky-mountain/2.jpg",
+   "/homes/rocky-mountain/3.jpg",
+   "/homes/rocky-mountain/4.jpg",
+   "/homes/rocky-mountain/5.jpg",
+   "/homes/rocky-mountain/6.jpg",
+   "/homes/rocky-mountain/7.jpg",
+   "/homes/rocky-mountain/8.jpg",
+   "/homes/rocky-mountain/9.jpg",
+   "/homes/rocky-mountain/10.jpg",
+   "/homes/rocky-mountain/11.jpg",
+   "/homes/rocky-mountain/12.jpg",
+   "/homes/rocky-mountain/13.jpg",
+   "/homes/rocky-mountain/14.jpg"
+  ],
+  "tour": "Uuf5LVr1uR4"
+ },
+ {
+  "slug": "silverado",
+  "name": "Silverado",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1352,
+  "section": null,
+  "series": [
+   "Extreme Series"
+  ],
+  "images": [
+   "/homes/silverado/0.jpg",
+   "/homes/silverado/1.jpg",
+   "/homes/silverado/2.jpg",
+   "/homes/silverado/3.jpg",
+   "/homes/silverado/4.jpg",
+   "/homes/silverado/5.jpg",
+   "/homes/silverado/6.jpg",
+   "/homes/silverado/7.jpg",
+   "/homes/silverado/8.jpg",
+   "/homes/silverado/9.jpg",
+   "/homes/silverado/10.jpg",
+   "/homes/silverado/11.jpg",
+   "/homes/silverado/12.jpg",
+   "/homes/silverado/13.jpg",
+   "/homes/silverado/14.jpg",
+   "/homes/silverado/15.jpg",
+   "/homes/silverado/16.jpg",
+   "/homes/silverado/17.jpg",
+   "/homes/silverado/18.jpg",
+   "/homes/silverado/19.jpg",
+   "/homes/silverado/20.jpg",
+   "/homes/silverado/21.jpg"
+  ],
+  "tour": "Xh692hxbAb7"
+ },
+ {
+  "slug": "slugger",
+  "name": "Slugger",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1130,
+  "section": "Single wide",
+  "series": [
+   "Classic Oaks"
+  ],
+  "images": [
+   "/homes/slugger/0.jpg",
+   "/homes/slugger/1.jpg",
+   "/homes/slugger/2.jpg",
+   "/homes/slugger/3.jpg",
+   "/homes/slugger/4.jpg",
+   "/homes/slugger/5.jpg",
+   "/homes/slugger/6.jpg",
+   "/homes/slugger/7.jpg",
+   "/homes/slugger/8.jpg",
+   "/homes/slugger/9.jpg",
+   "/homes/slugger/10.jpg",
+   "/homes/slugger/11.jpg",
+   "/homes/slugger/12.jpg",
+   "/homes/slugger/13.jpg",
+   "/homes/slugger/14.jpg",
+   "/homes/slugger/15.jpg",
+   "/homes/slugger/16.jpg",
+   "/homes/slugger/17.jpg",
+   "/homes/slugger/18.jpg"
+  ],
+  "tour": "C8ZntEFDHEU"
+ },
+ {
+  "slug": "southern-charm",
+  "name": "Southern Charm",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1040,
+  "section": null,
+  "series": [
+   "Signature Oak Series"
+  ],
+  "images": [
+   "/homes/southern-charm/0.jpg",
+   "/homes/southern-charm/1.jpg",
+   "/homes/southern-charm/2.jpg",
+   "/homes/southern-charm/3.jpg",
+   "/homes/southern-charm/4.jpg",
+   "/homes/southern-charm/5.jpg",
+   "/homes/southern-charm/6.jpg"
+  ],
+  "tour": "GGVZiRQFnuH"
+ },
+ {
+  "slug": "spark",
+  "name": "Spark",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 1456,
+  "section": null,
+  "series": [
+   "Runner Series"
+  ],
+  "images": [
+   "/homes/spark/0.jpg",
+   "/homes/spark/1.jpg",
+   "/homes/spark/2.jpg",
+   "/homes/spark/3.jpg",
+   "/homes/spark/4.jpg",
+   "/homes/spark/5.jpg",
+   "/homes/spark/6.jpg",
+   "/homes/spark/7.jpg",
+   "/homes/spark/8.jpg",
+   "/homes/spark/9.jpg",
+   "/homes/spark/10.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "spring-ridge",
+  "name": "Spring Ridge",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 1352,
+  "section": null,
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/spring-ridge/0.jpg",
+   "/homes/spring-ridge/1.jpg",
+   "/homes/spring-ridge/2.jpg",
+   "/homes/spring-ridge/3.jpg",
+   "/homes/spring-ridge/4.jpg",
+   "/homes/spring-ridge/5.jpg",
+   "/homes/spring-ridge/6.jpg",
+   "/homes/spring-ridge/7.jpg",
+   "/homes/spring-ridge/8.jpg",
+   "/homes/spring-ridge/9.jpg",
+   "/homes/spring-ridge/10.jpg",
+   "/homes/spring-ridge/11.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "sprinter",
+  "name": "Sprinter",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1456,
+  "section": null,
+  "series": [
+   "Runner Series"
+  ],
+  "images": [
+   "/homes/sprinter/0.jpg",
+   "/homes/sprinter/1.jpg",
+   "/homes/sprinter/2.jpg",
+   "/homes/sprinter/3.jpg",
+   "/homes/sprinter/4.jpg",
+   "/homes/sprinter/5.jpg",
+   "/homes/sprinter/6.jpg",
+   "/homes/sprinter/7.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "telford",
+  "name": "Telford",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 1525,
+  "section": null,
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/telford/0.jpg",
+   "/homes/telford/1.jpg",
+   "/homes/telford/2.jpg",
+   "/homes/telford/3.jpg",
+   "/homes/telford/4.jpg",
+   "/homes/telford/5.jpg",
+   "/homes/telford/6.jpg",
+   "/homes/telford/7.jpg",
+   "/homes/telford/8.jpg",
+   "/homes/telford/9.jpg",
+   "/homes/telford/10.jpg"
+  ],
+  "tour": "ng7wCdA8ySf"
+ },
+ {
+  "slug": "tremor",
+  "name": "Tremor",
+  "beds": 4,
+  "baths": 3.0,
+  "sqft": 1976,
+  "section": null,
+  "series": [
+   "Extreme Series"
+  ],
+  "images": [
+   "/homes/tremor/0.jpg",
+   "/homes/tremor/1.jpg",
+   "/homes/tremor/2.jpg",
+   "/homes/tremor/3.jpg",
+   "/homes/tremor/4.jpg",
+   "/homes/tremor/5.jpg",
+   "/homes/tremor/6.jpg",
+   "/homes/tremor/7.jpg",
+   "/homes/tremor/8.jpg",
+   "/homes/tremor/9.jpg",
+   "/homes/tremor/10.jpg",
+   "/homes/tremor/11.jpg",
+   "/homes/tremor/12.jpg",
+   "/homes/tremor/13.jpg",
+   "/homes/tremor/14.jpg",
+   "/homes/tremor/15.jpg",
+   "/homes/tremor/16.jpg",
+   "/homes/tremor/17.jpg",
+   "/homes/tremor/18.jpg",
+   "/homes/tremor/19.jpg",
+   "/homes/tremor/20.jpg",
+   "/homes/tremor/21.jpg",
+   "/homes/tremor/22.jpg",
+   "/homes/tremor/23.jpg",
+   "/homes/tremor/24.jpg"
+  ],
+  "tour": "q5x6BKgRqEv"
+ },
+ {
+  "slug": "trenton",
+  "name": "Trenton",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1352,
+  "section": null,
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/trenton/0.jpg",
+   "/homes/trenton/1.jpg",
+   "/homes/trenton/2.jpg",
+   "/homes/trenton/3.jpg",
+   "/homes/trenton/4.jpg",
+   "/homes/trenton/5.jpg",
+   "/homes/trenton/6.jpg",
+   "/homes/trenton/7.jpg",
+   "/homes/trenton/8.jpg",
+   "/homes/trenton/9.jpg",
+   "/homes/trenton/10.jpg",
+   "/homes/trenton/11.jpg",
+   "/homes/trenton/12.jpg",
+   "/homes/trenton/13.jpg",
+   "/homes/trenton/14.jpg",
+   "/homes/trenton/15.jpg",
+   "/homes/trenton/16.jpg",
+   "/homes/trenton/17.jpg",
+   "/homes/trenton/18.jpg",
+   "/homes/trenton/19.jpg"
+  ],
+  "tour": "7NQbUt8pT8B"
+ },
+ {
+  "slug": "troy",
+  "name": "Troy",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1127,
+  "section": "Single wide",
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/troy/0.jpg",
+   "/homes/troy/1.jpg",
+   "/homes/troy/2.jpg",
+   "/homes/troy/3.jpg",
+   "/homes/troy/4.jpg",
+   "/homes/troy/5.jpg",
+   "/homes/troy/6.jpg",
+   "/homes/troy/7.jpg",
+   "/homes/troy/8.jpg",
+   "/homes/troy/9.jpg",
+   "/homes/troy/10.jpg",
+   "/homes/troy/11.jpg",
+   "/homes/troy/12.jpg",
+   "/homes/troy/13.jpg"
+  ],
+  "tour": "xJxNhQFdN85"
+ },
+ {
+  "slug": "tswift",
+  "name": "TSwift",
+  "beds": 2,
+  "baths": 2.0,
+  "sqft": 728,
+  "section": "Single wide",
+  "series": [
+   "Runner SS"
+  ],
+  "images": [
+   "/homes/tswift/0.jpg",
+   "/homes/tswift/1.jpg",
+   "/homes/tswift/2.jpg",
+   "/homes/tswift/3.jpg",
+   "/homes/tswift/4.jpg",
+   "/homes/tswift/5.jpg",
+   "/homes/tswift/6.jpg",
+   "/homes/tswift/7.jpg",
+   "/homes/tswift/8.jpg",
+   "/homes/tswift/9.jpg",
+   "/homes/tswift/10.jpg",
+   "/homes/tswift/11.jpg",
+   "/homes/tswift/12.jpg",
+   "/homes/tswift/13.jpg",
+   "/homes/tswift/14.jpg"
+  ],
+  "tour": "bAhSXnjmnVj"
+ },
+ {
+  "slug": "tundra",
+  "name": "Tundra",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 1780,
+  "section": "Double wide",
+  "series": [
+   "XT Series"
+  ],
+  "images": [
+   "/homes/tundra/0.jpg",
+   "/homes/tundra/1.jpg",
+   "/homes/tundra/2.jpg",
+   "/homes/tundra/3.jpg",
+   "/homes/tundra/4.jpg",
+   "/homes/tundra/5.jpg",
+   "/homes/tundra/6.jpg",
+   "/homes/tundra/7.jpg",
+   "/homes/tundra/8.jpg",
+   "/homes/tundra/9.jpg",
+   "/homes/tundra/10.jpg",
+   "/homes/tundra/11.jpg",
+   "/homes/tundra/12.jpg",
+   "/homes/tundra/13.jpg",
+   "/homes/tundra/14.jpg",
+   "/homes/tundra/15.jpg",
+   "/homes/tundra/16.jpg",
+   "/homes/tundra/17.jpg",
+   "/homes/tundra/18.jpg",
+   "/homes/tundra/19.jpg",
+   "/homes/tundra/20.jpg",
+   "/homes/tundra/21.jpg",
+   "/homes/tundra/22.jpg"
+  ],
+  "tour": "mtz3upDvZMB"
+ },
+ {
+  "slug": "veranda",
+  "name": "Veranda",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1795,
+  "section": null,
+  "series": [
+   "Plantation Series"
+  ],
+  "images": [
+   "/homes/veranda/0.jpg",
+   "/homes/veranda/1.jpg",
+   "/homes/veranda/2.jpg",
+   "/homes/veranda/3.jpg",
+   "/homes/veranda/4.jpg",
+   "/homes/veranda/5.jpg",
+   "/homes/veranda/6.jpg",
+   "/homes/veranda/7.jpg",
+   "/homes/veranda/8.jpg",
+   "/homes/veranda/9.jpg",
+   "/homes/veranda/10.jpg",
+   "/homes/veranda/11.jpg",
+   "/homes/veranda/12.jpg"
+  ],
+  "tour": null
+ },
+ {
+  "slug": "victorian",
+  "name": "Victorian",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 2254,
+  "section": null,
+  "series": [
+   "Plantation Series"
+  ],
+  "images": [
+   "/homes/victorian/0.jpg",
+   "/homes/victorian/1.jpg",
+   "/homes/victorian/2.jpg",
+   "/homes/victorian/3.jpg",
+   "/homes/victorian/4.jpg",
+   "/homes/victorian/5.jpg",
+   "/homes/victorian/6.jpg",
+   "/homes/victorian/7.jpg",
+   "/homes/victorian/8.jpg",
+   "/homes/victorian/9.jpg",
+   "/homes/victorian/10.jpg",
+   "/homes/victorian/11.jpg",
+   "/homes/victorian/12.jpg",
+   "/homes/victorian/13.jpg",
+   "/homes/victorian/14.jpg",
+   "/homes/victorian/15.jpg",
+   "/homes/victorian/16.jpg",
+   "/homes/victorian/17.jpg",
+   "/homes/victorian/18.jpg",
+   "/homes/victorian/19.jpg",
+   "/homes/victorian/20.jpg"
+  ],
+  "tour": "wQAi8sp14zj"
+ },
+ {
+  "slug": "vin-diesel",
+  "name": "Vin Diesel",
+  "beds": 3,
+  "baths": 2.0,
+  "sqft": 1128,
+  "section": "Single wide",
+  "series": [
+   "Runner SS"
+  ],
+  "images": [
+   "/homes/vin-diesel/0.jpg",
+   "/homes/vin-diesel/1.jpg",
+   "/homes/vin-diesel/2.jpg",
+   "/homes/vin-diesel/3.jpg",
+   "/homes/vin-diesel/4.jpg",
+   "/homes/vin-diesel/5.jpg",
+   "/homes/vin-diesel/6.jpg",
+   "/homes/vin-diesel/7.jpg",
+   "/homes/vin-diesel/8.jpg",
+   "/homes/vin-diesel/9.jpg",
+   "/homes/vin-diesel/10.jpg",
+   "/homes/vin-diesel/11.jpg",
+   "/homes/vin-diesel/12.jpg",
+   "/homes/vin-diesel/13.jpg"
+  ],
+  "tour": "jNiYoLvMtMD"
+ },
+ {
+  "slug": "whitney",
+  "name": "Whitney",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 2273,
+  "section": null,
+  "series": [
+   "Plantation Series"
+  ],
+  "images": [
+   "/homes/whitney/0.jpg",
+   "/homes/whitney/1.jpg",
+   "/homes/whitney/2.jpg",
+   "/homes/whitney/3.jpg",
+   "/homes/whitney/4.jpg",
+   "/homes/whitney/5.jpg",
+   "/homes/whitney/6.jpg",
+   "/homes/whitney/7.jpg",
+   "/homes/whitney/8.jpg",
+   "/homes/whitney/9.jpg",
+   "/homes/whitney/10.jpg",
+   "/homes/whitney/11.jpg",
+   "/homes/whitney/12.jpg",
+   "/homes/whitney/13.jpg",
+   "/homes/whitney/14.jpg",
+   "/homes/whitney/15.jpg",
+   "/homes/whitney/16.jpg"
+  ],
+  "tour": "qejRffde2eM"
+ },
+ {
+  "slug": "yellow-jacket",
+  "name": "Yellow Jacket",
+  "beds": 2,
+  "baths": 2.0,
+  "sqft": 830,
+  "section": "Single wide",
+  "series": [
+   "Suwannee Valley"
+  ],
+  "images": [
+   "/homes/yellow-jacket/0.jpg",
+   "/homes/yellow-jacket/1.jpg",
+   "/homes/yellow-jacket/2.jpg",
+   "/homes/yellow-jacket/3.jpg",
+   "/homes/yellow-jacket/4.jpg",
+   "/homes/yellow-jacket/5.jpg",
+   "/homes/yellow-jacket/6.jpg",
+   "/homes/yellow-jacket/7.jpg",
+   "/homes/yellow-jacket/8.jpg",
+   "/homes/yellow-jacket/9.jpg"
+  ],
+  "tour": "K4YqQBV4tX5"
+ },
+ {
+  "slug": "yellowstone",
+  "name": "Yellowstone",
+  "beds": 4,
+  "baths": 2.0,
+  "sqft": 1958,
+  "section": "Double wide",
+  "series": [],
+  "images": [
+   "/homes/yellowstone/0.jpg",
+   "/homes/yellowstone/1.jpg",
+   "/homes/yellowstone/2.jpg",
+   "/homes/yellowstone/3.jpg",
+   "/homes/yellowstone/4.jpg",
+   "/homes/yellowstone/5.jpg",
+   "/homes/yellowstone/6.jpg",
+   "/homes/yellowstone/7.jpg",
+   "/homes/yellowstone/8.jpg",
+   "/homes/yellowstone/9.jpg",
+   "/homes/yellowstone/10.jpg"
+  ],
+  "tour": "z7JoA3CSxpp"
+ }
+]

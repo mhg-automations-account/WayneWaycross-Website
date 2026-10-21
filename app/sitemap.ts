@@ -7,6 +7,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: absoluteUrl("/"), images: [absoluteUrl("/og-image.jpg")] },
     { url: absoluteUrl("/homes") },
     { url: absoluteUrl("/about") },
-    ...homes.map((h) => ({ url: absoluteUrl(`/homes/${h.slug}`), images: [h.photo] })),
+    { url: absoluteUrl("/specials") },
+    { url: absoluteUrl("/upgrades") },
+    { url: absoluteUrl("/contact") },
+    ...homes.map((h) => ({ url: absoluteUrl(`/homes/${h.slug}`), images: [absoluteUrl(h.images[0])] })),
   ];
 }

@@ -10,46 +10,46 @@ import { pageMetadata } from "../lib/seo";
 import { site } from "../lib/site";
 
 export const metadata = pageMetadata({
-  title: `About ${site.fullName}: Mobile Home Dealer Since 1998`,
+  title: `About ${site.fullName}: Mobile Home Dealer in Waycross, GA`,
   description:
-    "Serving the Florida Panhandle and South Alabama since 1998, Family Home Center of Crestview is the largest Live Oak Homes factory dealer in the area.",
+    "Wayne Frier Home Center of Waycross is the exclusive Live Oak Homes retailer in Waycross, GA, with over 90 years of combined experience and homes built right here in Georgia.",
   path: "/about",
 });
 
 const stats = [
-  { value: "1998", label: "Serving Crestview since" },
-  { value: "#1", label: "Live Oak Homes factory dealer in the Panhandle" },
-  { value: "5★", label: "Award-winning customer service" },
+  { value: "90+", label: "Years of combined experience" },
+  { value: "8", label: "Home series to choose from" },
+  { value: "3", label: "Singlewide, doublewide and triplewide homes" },
 ];
 
 const services = [
   {
     icon: HouseIcon,
-    title: "Quality Live Oak Homes",
-    body: "Manufactured homes that deliver quality, value and long-term comfort for new mobile home buyers.",
+    title: "Floor plans",
+    body: "From single-wide homes to spacious double- and triple-wide options, with smart layouts and designs built to support everyday life.",
   },
   {
     icon: KeyIcon,
-    title: "Financing for almost anyone",
-    body: "We work with many different lenders to find a financing option that fits your family.",
+    title: "Custom design options",
+    body: "Customize finishes such as flooring, cabinetry, lighting and colors, along with select structural options.",
   },
   {
     icon: TreeIcon,
-    title: "Setup & land/home packages",
-    body: "Home purchase, delivery and setup, permits, land and land improvements, all handled in one place.",
+    title: "Delivery & setup",
+    body: "Built in Waycross, sold in Waycross, with thousands saved in freight. We ship to Florida, Georgia and South Carolina.",
   },
   {
     icon: ShieldIcon,
-    title: "Start-to-finish help",
-    body: "Whatever you need when buying a manufactured or mobile home, we're with you from first visit to move-in day.",
+    title: "Quality you can rely on",
+    body: "Live Oak Homes meet and exceed the federal HUD code, and each home is inspected by a third-party inspector.",
   },
 ];
 
 const covered = [
-  "Need just a home",
-  "Need it set up and permitted",
-  "Need land or land improvements",
-  "Need financing",
+  "Exclusive Live Oak Homes retailer in Waycross",
+  "Energy Star certified homes",
+  "Homes built right here in Georgia",
+  "Honest guidance, start to finish",
 ];
 
 export default function AboutPage() {
@@ -60,9 +60,9 @@ export default function AboutPage() {
       <main>
         <section id="top" className="bg-band px-4 pt-40 pb-16 text-center sm:px-6">
           <p className="text-sm font-medium tracking-wide text-clay uppercase">About us</p>
-          <h1 className="display hero-in mt-4 text-[clamp(3rem,7vw,5.5rem)]">A family-first home dealer</h1>
+          <h1 className="display hero-in mt-4 text-[clamp(3rem,7vw,5.5rem)]">Homes built right here in Waycross</h1>
           <p className="hero-in mx-auto mt-5 max-w-xl text-lg text-muted [animation-delay:150ms]">
-            Helping families across the Florida Panhandle and South Alabama find their way home since 1998.
+            Unmatched selection, value and price. Our goal is 100% customer satisfaction.
           </p>
         </section>
 
@@ -70,8 +70,8 @@ export default function AboutPage() {
           <div className="mx-auto grid max-w-[1200px] items-center gap-14 lg:grid-cols-2">
             <Reveal variant="reveal-window" className="relative aspect-[4/3] overflow-hidden rounded-[28px]">
               <Image
-                src="https://familyhomecentercrestview.com/wp-content/uploads/2021/01/JWL_0375.jpg"
-                alt="Inside a Live Oak home on the Family Home Center of Crestview lot"
+                src="/homes/arlington/0.jpg"
+                alt="Inside a Live Oak home at Wayne Frier Home Center of Waycross"
                 fill
                 sizes="(min-width: 1024px) 600px, 100vw"
                 className="object-cover"
@@ -83,19 +83,18 @@ export default function AboutPage() {
               </Reveal>
               <Reveal delay={100} className="mt-6 space-y-5 text-lg leading-relaxed text-muted">
                 <p>
-                  We are Family Home Center of Crestview, the largest Live Oak Homes factory dealer and a trusted
-                  manufactured home dealer in the panhandle of Florida.
+                  With over 90 years of combined experience, our staff at {site.fullName} is prepared to assist you
+                  with every step of the mobile home buying process.
                 </p>
                 <p>
-                  We have the experience and knowledge needed to make the mobile home buying process smooth and easy.
-                  We opened the Crestview location in 1998 to provide housing and meet the needs of customers in the
-                  Florida Panhandle and South Alabama.
+                  We have a variety of models and home styles, so there is sure to be a home for everyone. We are one
+                  of the only mobile home retailers to feature singlewide, doublewide and triplewide homes, and
+                  because our homes are built in Waycross, you save thousands in freight.
                 </p>
                 <p>
-                  General manager Tim Roberson prides himself and his staff on outstanding customer service throughout
-                  every sale. Our Crestview location is one of the top-selling stores and has won some of the most
-                  prestigious customer service awards in the area, which lets us offer extra rebates and incentives to
-                  our customers. It&rsquo;s just our way of saying thank you!
+                  As the exclusive Live Oak Homes retailer in Waycross, our homes are manufactured right in our
+                  backyard, so you receive the best service available after the sale. We understand the importance of
+                  a home, so our customers and their satisfaction are our #1 priority.
                 </p>
               </Reveal>
             </div>
@@ -115,7 +114,7 @@ export default function AboutPage() {
         <section className="bg-band px-4 py-24 sm:px-6">
           <div className="mx-auto max-w-[1200px]">
             <Reveal as="h2" className="display text-center text-[clamp(2.4rem,4.5vw,3.5rem)]">
-              What we do
+              What we offer
             </Reveal>
             <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
               {services.map((s, i) => (
@@ -130,7 +129,7 @@ export default function AboutPage() {
             </div>
 
             <Reveal delay={200} className="mt-14 text-center">
-              <p className="display text-[clamp(1.8rem,3vw,2.4rem)]">We have you covered.</p>
+              <p className="display text-[clamp(1.8rem,3vw,2.4rem)]">Why Wayne Frier of Waycross</p>
               <ul className="mt-6 flex flex-wrap justify-center gap-3">
                 {covered.map((c) => (
                   <li
@@ -142,7 +141,6 @@ export default function AboutPage() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-sm text-muted">See dealer for details.</p>
             </Reveal>
           </div>
         </section>

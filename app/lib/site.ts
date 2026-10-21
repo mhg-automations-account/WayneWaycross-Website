@@ -1,33 +1,34 @@
 export const site = {
-  name: "Family Homes",
-  fullName: "Family Homes of Crestview",
-  phone: "(850) 683-1777",
-  phoneHref: "tel:+18506831777",
-  facebook: "https://www.facebook.com/familyhomecentercrestview/",
-  city: "Crestview, FL",
+  name: "Wayne Frier of Waycross",
+  fullName: "Wayne Frier Home Center of Waycross",
+  phone: "(912) 283-6062",
+  phoneHref: "tel:+19122836062",
+  facebook: "https://www.facebook.com/waynefrierwaycross/",
+  instagram: "https://www.instagram.com/waynefrierwaycross/",
+  youtube: "https://www.youtube.com/channel/UCVfQF78pz2sam57aGj9zqoA",
+  twitter: "https://twitter.com/waynefrierhomes",
+  city: "Waycross, GA",
   /** Canonical origin used for metadata, the sitemap and structured data. Set NEXT_PUBLIC_SITE_URL to override (e.g. a www host). */
-  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://familyhomesofcrestview.com").replace(/\/+$/, ""),
+  url: (process.env.NEXT_PUBLIC_SITE_URL || "https://waynefrierwaycross.com").replace(/\/+$/, ""),
   address: {
-    street: "5350 S Ferdon Blvd",
-    city: "Crestview",
-    region: "FL",
-    postalCode: "32536",
+    street: "2072 Brunswick Hwy",
+    city: "Waycross",
+    region: "GA",
+    postalCode: "31503",
   },
-  geo: { lat: 30.7010868, lng: -86.5717609 },
-  mapUrl: "https://www.google.com/maps/place/Family+Home+Center/data=!4m2!3m1!1s0x0:0x64527220b340aa9b",
+  geo: { lat: 31.2047639, lng: -82.3276334 },
+  mapUrl: "https://www.google.com/maps/place/Wayne+Frier+Home+Center+Waycross/data=!4m2!3m1!1s0x0:0x18a72911c733ca96",
   hours: [
-    { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "09:00", closes: "17:30" },
-    { days: ["Saturday"], opens: "09:00", closes: "16:30" },
+    { days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], opens: "08:30", closes: "17:30" },
+    { days: ["Saturday"], opens: "09:00", closes: "15:00" },
   ],
+  /** Human-readable hours for the footer and contact page. */
+  hoursText: [
+    ["Mon–Fri", "8:30 am – 5:30 pm"],
+    ["Sat", "9:00 am – 3:00 pm"],
+    ["Sun", "Closed"],
+  ] as const,
 };
-
-/** Standard amortized monthly payment. */
-export function monthlyPayment(principal: number, aprPercent: number, years: number) {
-  const r = aprPercent / 100 / 12;
-  const n = years * 12;
-  if (r === 0) return principal / n;
-  return (principal * r) / (1 - Math.pow(1 + r, -n));
-}
 
 export const usd = (n: number) =>
   n.toLocaleString("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 });
