@@ -1,7 +1,7 @@
 import { pageMetadata } from "./lib/seo";
 import { site } from "./lib/site";
 import { CallToAction, Footer } from "./components/Closing";
-import FeaturedHomes from "./components/FeaturedHomes";
+import OnTheLot from "./components/OnTheLot";
 import Features from "./components/Features";
 import Specials from "./components/Specials";
 import Hero from "./components/Hero";
@@ -22,7 +22,7 @@ export default function Home() {
       <main>
         <Hero />
         <Features />
-        <FeaturedHomes />
+        <OnTheLot />
         <Reviews />
         <Specials />
         <CallToAction />

@@ -21,6 +21,11 @@ const sectionFilters: Option<Section | null>[] = [
   { label: "Triple wide", test: (s) => s === "Triple wide" },
 ];
 
+const lotFilters: Option<boolean>[] = [
+  { label: "Any availability", test: () => true },
+  { label: "Available on Lot", test: (onLot) => onLot },
+];
+
 const seriesFilters: Option<Home["series"]>[] = [
   { label: "Any series", test: () => true },
   ...SERIES.map((s) => ({ label: s, test: (list: Home["series"]) => list.includes(s) })),
@@ -92,6 +97,7 @@ export default function HomesBrowser() {
   const [series, setSeries] = useState(0);
   const [baths, setBaths] = useState(0);
   const [sqft, setSqft] = useState(0);
+  const [lot, setLot] = useState(0);
   const [sort, setSort] = useState("name");
 
   const list = useMemo(
@@ -103,19 +109,21 @@ export default function HomesBrowser() {
             sectionFilters[section].test(h.section) &&
             seriesFilters[series].test(h.series) &&
             bathFilters[baths].test(h.baths) &&
-            sqftFilters[sqft].test(h.sqft),
+            sqftFilters[sqft].test(h.sqft) &&
+            lotFilters[lot].test(h.onLot),
         )
         .sort(sorts[sort].fn),
-    [beds, section, series, baths, sqft, sort],
+    [beds, section, series, baths, sqft, lot, sort],
   );
 
-  const filtered = beds || section || series || baths || sqft;
+  const filtered = beds || section || series || baths || sqft || lot;
   const clear = () => {
     setBeds(0);
     setSection(0);
     setSeries(0);
     setBaths(0);
     setSqft(0);
+    setLot(0);
   };
 
   return (
@@ -136,6 +144,7 @@ export default function HomesBrowser() {
           ))}
         </div>
         <div className="flex flex-wrap items-center justify-center gap-2" role="group" aria-label="More filters">
+          <FilterSelect id="lot" label="Filter by availability" options={lotFilters} value={lot} onChange={setLot} />
           <FilterSelect id="section" label="Filter by home type" options={sectionFilters} value={section} onChange={setSection} />
           <FilterSelect id="series" label="Filter by home series" options={seriesFilters} value={series} onChange={setSeries} />
           <FilterSelect id="baths" label="Filter by bathrooms" options={bathFilters} value={baths} onChange={setBaths} />
