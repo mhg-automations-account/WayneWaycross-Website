@@ -36,7 +36,7 @@ function ReviewCard({ review, hidden }: { review: Review; hidden?: boolean }) {
   return (
     <figure
       aria-hidden={hidden || undefined}
-      className="flex w-[300px] shrink-0 flex-col rounded-3xl border border-line bg-white p-6 shadow-[0_10px_30px_-18px_rgba(40,70,30,0.35)] sm:w-[360px]"
+      className="flex w-[300px] shrink-0 flex-col rounded-3xl border border-line bg-white p-6 shadow-[0_10px_30px_-18px_rgba(20,20,20,0.35)] sm:w-[360px]"
     >
       <div className="flex items-center justify-between">
         <Stars rating={review.rating} />

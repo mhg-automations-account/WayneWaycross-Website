@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../public/FHC-CRESTVIEW-logo10_alt-325-rev2-copy.png";
+import logo from "../../public/WFHC-WAYCROSS-logo.png";
 
 type P = { className?: string };
 
@@ -86,17 +86,17 @@ export const ChevronDown = ({ className }: P) => (
 
 /**
  * Brand logo; size it with a height class, width follows the artwork.
- * The source PNG is 1280×720 with the badge at roughly (177, 174) → (1077, 429),
- * so we frame just that region instead of showing the white canvas around it.
+ * The source PNG is 1280×720 with the artwork occupying (106, 44) → (1197, 510),
+ * so we frame just that region instead of showing the transparent canvas around it.
  */
 export function Logo({ className = "h-10" }: P) {
   return (
-    <span className={`relative inline-block aspect-[900/255] shrink-0 overflow-hidden align-middle ${className}`}>
+    <span className={`relative inline-block aspect-[1091/466] shrink-0 overflow-hidden align-middle ${className}`}>
       <Image
         src={logo}
-        alt="Family Home Center Crestview"
+        alt="Wayne Frier Home Center of Waycross"
         sizes="320px"
-        className="absolute top-[-68.24%] left-[-19.67%] h-auto w-[142.22%] max-w-none"
+        className="absolute top-[-9.44%] left-[-9.72%] h-auto w-[117.32%] max-w-none"
       />
     </span>
   );

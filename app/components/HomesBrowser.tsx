@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { homes, type Home, type Section } from "../lib/homes";
+import { homes, SERIES, type Home, type Section } from "../lib/homes";
 import HomeCard from "./HomeCard";
 
 const bedFilters = [
@@ -14,11 +14,16 @@ const bedFilters = [
 
 type Option<T> = { label: string; test: (v: T) => boolean };
 
-const sectionFilters: Option<Section>[] = [
+const sectionFilters: Option<Section | null>[] = [
   { label: "Any type", test: () => true },
   { label: "Single wide", test: (s) => s === "Single wide" },
   { label: "Double wide", test: (s) => s === "Double wide" },
   { label: "Triple wide", test: (s) => s === "Triple wide" },
+];
+
+const seriesFilters: Option<Home["series"]>[] = [
+  { label: "Any series", test: () => true },
+  ...SERIES.map((s) => ({ label: s, test: (list: Home["series"]) => list.includes(s) })),
 ];
 
 const bathFilters: Option<number>[] = [
@@ -84,6 +89,7 @@ const sorts: Record<string, { label: string; fn: (a: Home, b: Home) => number }>
 export default function HomesBrowser() {
   const [beds, setBeds] = useState(0);
   const [section, setSection] = useState(0);
+  const [series, setSeries] = useState(0);
   const [baths, setBaths] = useState(0);
   const [sqft, setSqft] = useState(0);
   const [sort, setSort] = useState("name");
@@ -95,17 +101,19 @@ export default function HomesBrowser() {
           (h) =>
             bedFilters[beds].test(h.beds) &&
             sectionFilters[section].test(h.section) &&
+            seriesFilters[series].test(h.series) &&
             bathFilters[baths].test(h.baths) &&
             sqftFilters[sqft].test(h.sqft),
         )
         .sort(sorts[sort].fn),
-    [beds, section, baths, sqft, sort],
+    [beds, section, series, baths, sqft, sort],
   );
 
-  const filtered = beds || section || baths || sqft;
+  const filtered = beds || section || series || baths || sqft;
   const clear = () => {
     setBeds(0);
     setSection(0);
+    setSeries(0);
     setBaths(0);
     setSqft(0);
   };
@@ -129,6 +137,7 @@ export default function HomesBrowser() {
         </div>
         <div className="flex flex-wrap items-center justify-center gap-2" role="group" aria-label="More filters">
           <FilterSelect id="section" label="Filter by home type" options={sectionFilters} value={section} onChange={setSection} />
+          <FilterSelect id="series" label="Filter by home series" options={seriesFilters} value={series} onChange={setSeries} />
           <FilterSelect id="baths" label="Filter by bathrooms" options={bathFilters} value={baths} onChange={setBaths} />
           <FilterSelect id="sqft" label="Filter by square feet" options={sqftFilters} value={sqft} onChange={setSqft} />
         </div>

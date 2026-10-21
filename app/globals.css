@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
-/* Leaf-green palette pulled from the Family Home Center logo.
-   `clay` is the primary brand accent, `blush` its light tint. */
+/* Red, black and white palette pulled from the Wayne Frier Home Center logo.
+   `clay` is the primary brand accent (logo red), `blush` its light tint. */
 @theme {
-  --color-cream: #f8faf4;
-  --color-band: #eef4e6;
-  --color-card: #f1f6ea;
-  --color-line: #dde8d1;
-  --color-ink: #1f271c;
-  --color-muted: #56614f;
-  --color-clay: #4c8a2b;
-  --color-clay-dark: #3d7322;
-  --color-blush: #e0f0d0;
-  --color-sage: #5f9a4a;
+  --color-cream: #faf8f5;
+  --color-band: #f1ede7;
+  --color-card: #f6f2ec;
+  --color-line: #e4ded5;
+  --color-ink: #141414;
+  --color-muted: #4a4a4a;
+  --color-clay: #c01f26;
+  --color-clay-dark: #9a1a1f;
+  --color-blush: #f8e1e2;
+  --color-sage: #c01f26;
   --color-gold: #d4a94a;
   --font-serif: var(--font-instrument-serif);
   --font-sans: var(--font-inter);

@@ -3,15 +3,15 @@ import { site } from "./lib/site";
 import { CallToAction, Footer } from "./components/Closing";
 import FeaturedHomes from "./components/FeaturedHomes";
 import Features from "./components/Features";
-import Financing from "./components/Financing";
+import Specials from "./components/Specials";
 import Hero from "./components/Hero";
 import Nav from "./components/Nav";
 import Reviews from "./components/Reviews";
 
 export const metadata = pageMetadata({
-  title: `Mobile Homes for Sale in Crestview, FL | ${site.fullName}`,
+  title: `Mobile Homes for Sale in Waycross, GA | ${site.fullName}`,
   description:
-    "Shop single, double and triple-wide mobile homes from Live Oak Homes and TownHomes in Crestview, FL, with land/home packages, financing, delivery and setup.",
+    "Shop singlewide, doublewide and triplewide Live Oak Homes in Waycross, GA. Exclusive Live Oak Homes retailer with energy-efficient homes, customization, delivery and setup.",
   path: "/",
 });
 
@@ -24,7 +24,7 @@ export default function Home() {
         <Features />
         <FeaturedHomes />
         <Reviews />
-        <Financing />
+        <Specials />
         <CallToAction />
       </main>
       <Footer />

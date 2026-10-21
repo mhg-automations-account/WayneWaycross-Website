@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { CallToAction, Footer } from "../../components/Closing";
 import JsonLd, { breadcrumbSchema } from "../../components/JsonLd";
 import HomeCard from "../../components/HomeCard";
+import Gallery from "../../components/Gallery";
 import { ArrowRight } from "../../components/Icons";
 import Nav from "../../components/Nav";
-import { getHome, homes, homeAlt } from "../../lib/homes";
+import { cover, getHome, homes, homeAlt } from "../../lib/homes";
 import { pageMetadata } from "../../lib/seo";
-import { site } from "../../lib/site";
+import { site, usd } from "../../lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -22,9 +22,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!home) return {};
   return pageMetadata({
     title: `The ${home.name}: ${home.beds} Bed, ${home.baths} Bath Mobile Home | ${site.fullName}`,
-    description: `See the ${home.name}, a ${home.beds}-bedroom, ${home.baths}-bath, ${home.sqft.toLocaleString("en-US")} sq ft manufactured home on our lot in ${site.city}. Call ${site.phone} for pricing, financing and delivery.`,
+    description: `See the ${home.name}, a ${home.beds}-bedroom, ${home.baths}-bath, ${home.sqft.toLocaleString("en-US")} sq ft manufactured home at ${site.fullName} in ${site.city}. Call ${site.phone} for pricing and delivery.`,
     path: `/homes/${home.slug}`,
-    image: { url: home.photo, alt: homeAlt(home) },
+    image: { url: cover(home), alt: homeAlt(home) },
   });
 }
 
@@ -59,19 +59,17 @@ export default async function HomePage({ params }: Props) {
               ← All homes
             </Link>
             <div className="mt-6 grid gap-10 lg:grid-cols-[1.5fr_1fr] lg:items-center">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] border border-line bg-band">
-                <Image
-                  src={home.photo}
-                  alt={homeAlt(home)}
-                  fill
-                  preload
-                  sizes="(min-width: 1024px) 720px, 100vw"
-                  className="object-cover"
-                />
-              </div>
+              <Gallery images={home.images} alt={homeAlt(home)} />
               <div>
-                <p className="text-sm font-medium tracking-wide text-clay uppercase">On our lot</p>
+                <p className="text-sm font-medium tracking-wide text-clay uppercase">
+                  {[home.section, ...home.series].filter(Boolean).join(" · ") || "On our lot"}
+                </p>
                 <h1 className="display mt-3 text-[clamp(3rem,6vw,4.8rem)]">The {home.name}</h1>
+                {home.markdown && (
+                  <p className="mt-4 inline-block rounded-full bg-clay px-4 py-1.5 text-sm font-semibold text-white">
+                    Marked down {usd(home.markdown)}
+                  </p>
+                )}
                 <dl className="mt-8 grid grid-cols-3 gap-3">
                   {stats.map((s) => (
                     <div key={s.label} className="rounded-2xl border border-line bg-card p-4">
@@ -81,8 +79,8 @@ export default async function HomePage({ params }: Props) {
                   ))}
                 </dl>
                 <p className="mt-8 leading-relaxed text-muted">
-                  Come see the {home.name} in person. We&rsquo;ll walk you through options, delivery and setup, and
-                  financing that fits your family.
+                  Come see the {home.name} in person. We&rsquo;ll walk you through floor plan options, customization,
+                  delivery and setup.
                 </p>
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a
@@ -92,19 +90,35 @@ export default async function HomePage({ params }: Props) {
                     Call {site.phone}
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </a>
-                  <a
-                    href={home.source}
-                    target="_blank"
-                    rel="noopener"
+                  <Link
+                    href="/contact"
                     className="inline-flex items-center justify-center rounded-full border border-line bg-card px-7 py-3.5 font-medium text-ink transition-colors hover:border-clay/40 hover:text-clay"
                   >
-                    See all photos
-                  </a>
+                    Request a visit
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
+
+        {home.tour && (
+          <section className="px-4 pb-20 sm:px-6">
+            <div className="mx-auto max-w-[1200px]">
+              <h2 className="display text-[clamp(2.2rem,4vw,3rem)]">Take a 3D tour</h2>
+              <div className="relative mt-8 aspect-video overflow-hidden rounded-[28px] border border-line bg-band">
+                <iframe
+                  src={`https://my.matterport.com/show/?m=${home.tour}`}
+                  title={`${home.name} 3D tour`}
+                  loading="lazy"
+                  allowFullScreen
+                  allow="fullscreen; xr-spatial-tracking"
+                  className="absolute inset-0 h-full w-full"
+                />
+              </div>
+            </div>
+          </section>
+        )}
 
         {similar.length > 0 && (
           <section className="bg-band px-4 py-20 sm:px-6">

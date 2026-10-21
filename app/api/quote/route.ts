@@ -24,7 +24,7 @@ export async function POST(request: Request) {
   const res = await fetch(hook, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ ...lead, source: "familyhomesofcrestview.com", submittedAt: new Date().toISOString() }),
+    body: JSON.stringify({ ...lead, source: "waynefrierwaycross.com", submittedAt: new Date().toISOString() }),
   }).catch(() => null);
   if (!res?.ok) return Response.json({ error: "Could not deliver lead" }, { status: 502 });
   return Response.json({ ok: true });

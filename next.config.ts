@@ -6,9 +6,8 @@ const nextConfig: NextConfig = {
     formats: ["image/avif", "image/webp"],
     // Listing photos rarely change, so keep optimized copies for 31 days instead of 4 hours
     minimumCacheTTL: 2678400,
-    // Listing photos are served from the dealership's existing WordPress media library
+    // Listing photos are self-hosted in /public; only Google reviewer avatars are remote
     remotePatterns: [
-      new URL("https://familyhomecentercrestview.com/wp-content/uploads/**"),
       // Google reviewer profile photos
       new URL("https://lh3.googleusercontent.com/**"),
     ],

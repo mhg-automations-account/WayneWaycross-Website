@@ -108,7 +108,7 @@ export default function QuoteForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="flex h-14 w-full items-center justify-center gap-2.5 rounded-full bg-clay text-[17px] font-medium text-white shadow-[0_12px_30px_-10px_rgba(76,138,43,0.7)] transition-colors hover:bg-clay-dark disabled:opacity-70"
+        className="flex h-14 w-full items-center justify-center gap-2.5 rounded-full bg-clay text-[17px] font-medium text-white shadow-[0_12px_30px_-10px_rgba(192,31,38,0.5)] transition-colors hover:bg-clay-dark disabled:opacity-70"
       >
         <SendIcon className="h-5 w-5" />
         {status === "sending" ? "Sending…" : "Get Your Free Quote"}

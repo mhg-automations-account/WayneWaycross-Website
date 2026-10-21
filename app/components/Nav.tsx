@@ -7,9 +7,11 @@ import { Logo } from "./Icons";
 
 const links = [
   { href: "/homes", label: "Homes" },
-  { href: "/#financing", label: "Financing" },
+  { href: "/specials", label: "Specials" },
+  { href: "/upgrades", label: "Upgrades" },
   { href: "/#reviews", label: "Reviews" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
 ];
 
 const ease = "duration-700 ease-[cubic-bezier(0.22,1,0.36,1)]";
@@ -41,8 +43,8 @@ export default function Nav() {
       <nav
         className={`mx-auto flex items-center justify-between border transition-all ${ease} ${
           compact
-            ? "max-w-[820px] rounded-2xl border-line bg-cream/90 py-2 pr-2 pl-3 shadow-[0_6px_30px_-12px_rgba(40,70,30,0.25)] backdrop-blur-xl"
-            : "max-w-[1500px] rounded-2xl border-white/70 bg-cream/75 py-2.5 pr-2.5 pl-4 shadow-[0_8px_30px_-16px_rgba(40,70,30,0.3)] backdrop-blur-md sm:py-3 sm:pr-4 sm:pl-5"
+            ? "max-w-[820px] rounded-2xl border-line bg-cream/90 py-2 pr-2 pl-3 shadow-[0_6px_30px_-12px_rgba(20,20,20,0.25)] backdrop-blur-xl"
+            : "max-w-[1500px] rounded-2xl border-white/70 bg-cream/75 py-2.5 pr-2.5 pl-4 shadow-[0_8px_30px_-16px_rgba(20,20,20,0.3)] backdrop-blur-md sm:py-3 sm:pr-4 sm:pl-5"
         }`}
       >
         <Link href="/" aria-label={`${site.fullName} home`}>
@@ -86,7 +88,7 @@ export default function Nav() {
       {/* Links hidden in the bar below md; always in the DOM so crawlers see them */}
       <ul
         id="mobile-menu"
-        className={`mx-auto mt-2 max-w-[820px] flex-col rounded-2xl border border-line bg-cream/95 p-2 text-[15px] font-medium text-ink shadow-[0_6px_30px_-12px_rgba(40,70,30,0.25)] backdrop-blur-xl md:hidden ${
+        className={`mx-auto mt-2 max-w-[820px] flex-col rounded-2xl border border-line bg-cream/95 p-2 text-[15px] font-medium text-ink shadow-[0_6px_30px_-12px_rgba(20,20,20,0.25)] backdrop-blur-xl md:hidden ${
           open ? "flex" : "hidden"
         }`}
       >

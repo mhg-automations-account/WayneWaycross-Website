@@ -1,7 +1,7 @@
 import snapshot from "./reviews-snapshot.json";
 
-/** Google Business Profile for Family Home Center Crestview. */
-export const GOOGLE_PLACE_ID = "ChIJqaTr3s9ykYgRm6pAsyByUmQ";
+/** Google Business Profile for Wayne Frier Home Center of Waycross. */
+export const GOOGLE_PLACE_ID = "ChIJ6_LAhZrw74gRlsozxxEppxg";
 export const googleReviewsUrl = `https://search.google.com/local/reviews?placeid=${GOOGLE_PLACE_ID}`;
 export const googleWriteReviewUrl = `https://search.google.com/local/writereview?placeid=${GOOGLE_PLACE_ID}`;
 
@@ -26,7 +26,7 @@ const DAY = 60 * 60 * 24;
 
 // The dealership's review widget mirrors every Google review for the listing, unlike the
 // Places API which only ever returns 5, so it's the main live source.
-const FEED_URL = "https://www.localmarketingmanager.com/api/reviews/family-home-center-review-widget?pageSize=1000";
+const FEED_URL = "https://www.localmarketingmanager.com/api/reviews/wayne-frier-home-center-waycross-review-widget?pageSize=1000";
 
 const decode = (s: string) =>
   s
